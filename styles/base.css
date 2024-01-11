@@ -77,10 +77,6 @@ footer{
     padding: 30px;
 }
 
-footer #lastModified{
-    color: #FFBF46;
-}
-
 @media screen and (max-width:900px){
     nav{
         flex-direction: column;
