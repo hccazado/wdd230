@@ -1,0 +1,88 @@
+/*Importing Fonts: Raleway, Fira Sans, Figtree from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300&family=Fira+Sans&family=Raleway&display=swap');
+
+body{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+a{
+    font-family: Raleway, serif;
+}
+
+p, span, li{
+    font-family: figtree, serif;
+}
+
+header{
+    background-color: #4F7CAC;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header img{
+    width:110px;
+    border-radius: 10px;
+}
+
+header h1{
+    align-self: center;
+    color: #012;
+    margin-left: 20px;
+}
+
+nav{
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+nav a{
+    color: #fff;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: #4F7CAC;
+}
+
+.card{
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin: 20px;
+}
+
+.card h3{
+    background-color: #4F7CAC;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.card ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+footer{
+    background-color: #4F7CAC;
+    padding: 30px;
+}
+
+footer #lastModified{
+    color: #FFBF46;
+}
+
+@media screen and (max-width:900px){
+    nav{
+        flex-direction: column;
+    }
+}
