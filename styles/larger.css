@@ -1,6 +1,5 @@
 @media screen and (min-width:500px) {
-    nav{
-        display: flex;
+    nav ul{
         flex-direction: row;
     }
     main{
