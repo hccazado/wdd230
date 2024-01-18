@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300&family=Fira+Sans&family=Raleway&display=swap");
 
 body {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   text-align: center;
 }
@@ -27,7 +27,7 @@ li {
 }
 
 header {
-  background-color: #4f7cac;
+  background-color: #0e4581;
   display: flex;
   padding: 20px;
   flex-direction: row;
@@ -41,7 +41,7 @@ header img {
 
 header h1 {
   align-self: center;
-  color: #012;
+  color: #fff;
   margin-left: 20px;
 }
 
@@ -58,7 +58,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #4f7cac;
+  background-color: #0e4581;
+  color: #fff;
 }
 
 .card {
@@ -68,7 +69,8 @@ nav a:hover {
 }
 
 .card h3 {
-  background-color: #4f7cac;
+  background-color: #0e4581;
+  color: #fff;
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
   padding: 20px;
@@ -81,6 +83,7 @@ nav a:hover {
 }
 
 footer {
-  background-color: #4f7cac;
+  background-color: #0e4581;
+  color: #fff;
   padding: 30px;
 }
