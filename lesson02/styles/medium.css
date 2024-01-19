@@ -1,0 +1,11 @@
+@media screen and (min-width:500px){
+    .principles{
+        grid-template-columns: 1fr 1fr;
+    }
+    .card:last-child{
+        grid-column: 1/3;
+    }
+    .card:last-child img{
+        max-width: 95%;
+    }
+}
