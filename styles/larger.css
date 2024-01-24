@@ -1,4 +1,7 @@
 @media screen and (min-width:500px) {
+    nav{
+        display: block;
+    }
     nav ul{
         flex-direction: row;
     }
@@ -12,5 +15,8 @@
     main hr{
         grid-column: 1/3;
         width:100%;
+    }
+    .hmbBtn{
+        display: none;
     }
 }

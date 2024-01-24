@@ -23,10 +23,12 @@
     <img src="images/profile.jpeg" alt="Heitor Chaves Cazado">
     <h1>Heitor C. Cazado</h1>
   </header>
-  <nav>
+  <div class="hmbBtn">
+  </div>
+  <nav class="navBar">
     <ul>
       <li>
-        <a href="#">Home</a>
+        <a href="#" active>Home</a>
       </li>
       <li>
         <a href="lesson03/chamber-site-plan.html">Site Plan</a>
@@ -70,6 +72,12 @@
       <h3>Information</h3>
       <p>Date: <span id="ct-date"></span></p>
     </section>
+    <div class="card map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60382.936721182756!2d-47.02571028838585!3d-18.93433541508237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94afba83e5e96d81%3A0x649f047e8c0afaf5!2sPatroc%C3%ADnio%2C%20MG%2C%2038740-000!5e0!3m2!1spt-BR!2sbr!4v1706038188422!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </main>
   <footer>
     <p>&copy; <span id="ct-year"></span> - Heitor Chaves Cazado - Brazil
@@ -77,6 +85,7 @@
     <p id="lastModified"></p>
   </footer>
   <script src="scripts/getdates.js"></script>
+  <script src="scripts/menu.js"></script>
 </body>
 
 </html>

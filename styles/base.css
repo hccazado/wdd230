@@ -52,8 +52,31 @@ header h1 {
   margin-left: 20px;
 }
 
+.hmbBtn::before{
+  content: "≡";
+}
+
+.hmbBtn{
+  position:absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  display: block;
+}
+
+.show::before .hmbBtn{
+  content:"X";
+  font-size: 1.5rem;
+}
+
+.show{
+  display: block;
+}
+
 nav {
   background: #000;
+  display:none;
 }
 
 nav ul{
@@ -79,9 +102,15 @@ nav a:hover {
   color: #fff;
 }
 
+:active{
+  background-color: #0e4581;
+  color: #fff;
+}
+
 .card {
   border: 1px solid #ccc;
   border-radius: 0.5rem;
+  box-shadow: #323161 1px 5px 6px;
   margin: 20px;
 }
 
@@ -104,6 +133,16 @@ nav a:hover {
 }
 .card ul li{
   margin: .5rem;
+}
+
+.map{
+  grid-column: 1/3;
+  border: none;
+}
+.map iframe{
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  width:100%;
 }
 
 footer {
