@@ -57,21 +57,27 @@ header h1 {
 }
 
 .hmbBtn{
-  position:absolute;
-  top: 1rem;
-  right: 1rem;
+  position: absolute;
+  top: 0.8rem;
+  right: 1.2rem;
   color: #fff;
   font-size: 2rem;
   display: block;
+  font-weight: bold;
 }
 
-.show::before .hmbBtn{
+.hmbBtn.show::before{
   content:"X";
+  font-family: "Fira Sans", sans-serif;
   font-size: 1.5rem;
 }
 
 .show{
   display: block;
+}
+
+.active::before{
+  content:"⚜️";
 }
 
 nav {
