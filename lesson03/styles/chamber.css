@@ -69,6 +69,13 @@ section > nav > ul > li > a:hover{
     color: #000;
 }
 
+section > img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
+}
+
 .montserrat{
     font-family: 'montserrat',sans-serif;
 }
