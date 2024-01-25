@@ -44,7 +44,7 @@ section table{
     width:325px;
     overflow: auto;
 }
-section td{
+section td, section th{
     padding: 1rem;
     border:1px solid #ccc;
 }
