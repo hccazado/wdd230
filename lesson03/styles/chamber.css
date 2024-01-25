@@ -8,7 +8,7 @@
     max-width: 900px;
     margin: 0 auto;
     text-align: left;
-    padding-left:1rem;
+    padding:1rem;
   }
 h1,h2,h3,h4,h5,h6{
     font-family: 'montserrat', sans-serif;
@@ -41,6 +41,8 @@ section table{
     border:1px solid #ccc;
     margin-top:1rem;
     margin-bottom:1rem;
+    width:325px;
+    overflow: auto;
 }
 section td{
     padding: 1rem;
@@ -50,6 +52,7 @@ section td{
 section > nav > ul {
     list-style: none;
     display: flex;
+    width:350px;
 }
 
 section > nav > ul > li {
@@ -74,6 +77,11 @@ section > img{
     max-width: 100%;
     height: auto;
     margin: 2rem auto;
+}
+
+.table-container{
+    width: 350px;
+    overflow: auto;
 }
 
 .montserrat{
