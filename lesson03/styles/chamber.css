@@ -62,7 +62,7 @@ section > nav > ul > li {
 section > nav > ul > li > a{
     display: block;
     padding: .5rem;
-    background-color: #485696;
+    background-color: #374067;
     color: #fff;
     font-family: lora, sans-serif;
     text-decoration: none;
@@ -95,7 +95,7 @@ section > img{
     background-color: #FF7F11;
 }
 .accent1-color{
-    background-color: #485696;
+    background-color: #374067;
     color: #fff;
 }
 .accent2-color{
