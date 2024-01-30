@@ -1,0 +1,16 @@
+@media screen and (min-width:700px) {
+    nav ul{
+        flex-direction: row;
+    }
+    section .info{
+        grid-template-columns: 1fr auto;
+    }
+
+    .carousel ul{
+        overflow-x: hidden;
+    }
+
+    footer > ul{
+        flex-direction: row;
+    }
+}
