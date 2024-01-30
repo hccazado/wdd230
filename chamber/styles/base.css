@@ -38,11 +38,11 @@ header h1{
 
 .hero{
     aspect-ratio: 1/0.5 ;
-    max-width: 100vw;
+    max-width: 100%;
     height: 100%;
-    width:1000px;
+    width: 1000px;
+    min-width: 100%;
 }
-
 
 nav{
     background-color: #374067;
@@ -51,8 +51,24 @@ nav{
 
 nav ul{
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
+}
+
+#hmbbtn::before{
+    content: "🟰";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding:0.2rem;
+    background-color:#fff;
+}
+
+#hmbbtn.show::before{
+    content: "✖️";
+}
+.show{
+    display:flex;
 }
 
 nav ul li{
@@ -152,4 +168,9 @@ footer div span{
     display:block;
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
+}
+#course-info,
+#modified{
+    display: block;
+    padding: 0.5rem;
 }
