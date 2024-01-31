@@ -124,6 +124,10 @@ section .info img{
     line-height: 1.3em;
 }
 
+.carousel a{
+    text-decoration: none;
+}
+
 footer{
     background-color: #374067;
     color: #fff;
@@ -160,8 +164,13 @@ footer a:hover{
 
 footer div{
     text-align: center;
-    width: clamp(200px, 25vw, 350px);
-    margin: 0 auto;
+    margin: 1rem auto;
+    flex: 1 1 100%;
+}
+
+footer div h3{
+    font-weight: 500;
+    padding-bottom: .5rem;
 }
 
 footer div span{
