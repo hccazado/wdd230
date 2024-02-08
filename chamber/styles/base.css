@@ -7,7 +7,7 @@
 body{
     font-family: 'montserrat', sans-serif;
     font-size: 16px;
-    max-width:1000px;
+    max-width: 100%;
     margin:0 auto;
 }
 h1,h2,h3,h4,h5,h6{
@@ -16,20 +16,19 @@ h1,h2,h3,h4,h5,h6{
     padding-top: 2rem;
     padding-bottom: 1.2rem;
 }
-
+.herobox{
+    width:100%;
+}
 .actions{
     background-color: #35A7FF;
-    padding: 0.2rem;
+    padding: 0.3rem;
     height: 3rem;
+    display: grid;
 }
 
 .social{
-    text-align: end;
     list-style: none;
     display: flex;
-    position: absolute;
-    left: .5rem;
-    top: 0.5rem;
     width:120px;
     flex-direction: row;
 }
@@ -55,12 +54,10 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #mode{
-    background-color: #EEE5E9;
     padding: 0.3rem;
-    position: absolute;
-    display: inline;
-    top: .5rem;
-    right: 4rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
 }
 
 #hmbbtn::before{

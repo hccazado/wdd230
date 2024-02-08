@@ -23,6 +23,7 @@
     #mode{
         top: .6rem;
         right: 8rem;
+        grid-column: 4/5;
     }
 
     #hmbbtn{
