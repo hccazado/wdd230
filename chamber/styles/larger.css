@@ -4,6 +4,27 @@
         flex-direction: row;
     }
 
+    .action{
+        border-radius: 0.5rem;
+        box-shadow: #374067 5px 5px 5px;
+        font-weight: bold;
+        padding: 1rem;
+        border: none;
+        background: #FF7F11;
+        position: absolute;
+        top: 6rem;
+        left: 11rem;
+    }
+
+    .social{
+        left: 7rem;
+    }
+
+    #mode{
+        top: .6rem;
+        right: 8rem;
+    }
+
     #hmbbtn{
         display: none;
     }

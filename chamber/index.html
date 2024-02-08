@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Heitor Chaves Cazado" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="author" content="Heitor Chaves Cazado" >
     <meta name="description" content="Rosario Chamber of Commerce is an ONG that leads the strengthening of associated businesses, 
-                                      and empowers local population with tools to develop a better social environment." />
-    <meta property="og:title" content="Rosario Chamber of Commerce" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://hccazado.github.io/wdd230/chamber/" />
-    <meta property="og:image" content="https://hccazado.github.io/wdd230/chamber/images/rosario-monumento.webp" />
+                                      and empowers local population with tools to develop a better social environment." >
+    <meta property="og:title" content="Rosario Chamber of Commerce" >
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="https://hccazado.github.io/wdd230/chamber/" >
+    <meta property="og:image" content="https://hccazado.github.io/wdd230/chamber/images/rosario-monumento.webp" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
@@ -21,7 +21,20 @@
     <title>Rosario Chamber of Commerce</title>
 </head>
 <body>
-    <img class="hero" src="images/rosario-monumento.webp" alt="Rosario's national Flag Memorial">
+    <div class="herobox">
+        <div class="actions">
+            <div id="mode">
+                🌘
+            </div>
+            <ul class="social">
+                <li target="_blank" href="https://www.instagram.com"><img src="images/instagram.webp" alt="link to social media instagram"></li>
+                <li target="_blank" href="https://www.facebook.com"><img src="images/facebook.webp" alt="link to social media facebook"></li>
+            </ul>
+        </div>
+        <img class="hero" src="images/rosario-monumento.webp" alt="Rosario's national Flag Memorial">
+        <button class="action">Join the Chamber</button>
+        
+    </div>
     <header>
         <h1>Rosario Chamber of Commerce</h1>
         <div id="weather">
@@ -29,6 +42,7 @@
             <span>32.5c</span>
         </div>
     </header>
+    
     <div id="hmbbtn"></div>
         <nav>
             <ul class="navlist">
@@ -125,6 +139,7 @@
         <p id="modified"></p>
         <p id="course-info"></p>
     </footer>
+    <script src="scripts/actions.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/development-info.js"></script>
 </body>
