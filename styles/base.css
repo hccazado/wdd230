@@ -8,7 +8,7 @@
 }
 
 body {
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
   text-align: center;
 }
@@ -28,6 +28,7 @@ a {
 }
 
 p,
+div,
 span,
 li {
   font-family: figtree, serif;
@@ -107,6 +108,26 @@ nav a {
 nav a:hover {
   background-color: #0e4581;
   color: #fff;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero{
+  position: relative;
+}
+
+.temple{
+  border-radius: .5rem;
+  background-color: #0e4581;
+  color: #fff;
+  box-shadow: #0e4581 5px 5px 5px;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  padding: .75rem;
 }
 
 :active{
