@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heitor Chaves Cazado">
+    <meta name="description" content="This page gets puts into practice the concept of responsive images">
+    <meta name="og:title" content="Heitor Chaves Cazado - WDD 230: Responsive Images">
+    <meta name="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <title>Lesson06 - Responsive Images</title>
+</head>
+
+<body>
+    <mian>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Provo city center temple" width="1200" height="600">
+            </picture>
+        </div>
+    </mian>
+</body>
+
+</html>
