@@ -26,9 +26,16 @@ submitBtn.addEventListener("click", ()=>{
         scripturesList.appendChild(liItem);
 
         input.value = "";
+        
+        inputFocus();
     }
     else{
         window.alert("You need to inform your favorite scripture!");
-        input.focus();
+        
+        inputFocus();
     }
 });
+
+const inputFocus = () => {
+    input.focus();
+}

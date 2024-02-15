@@ -13,17 +13,16 @@
         background: #FF7F11;
         position: absolute;
         top: 6rem;
-        left: 11rem;
+        left: 7rem;
     }
 
     .social{
         left: 7rem;
     }
 
-    #mode{
-        top: .6rem;
-        right: 8rem;
-        grid-column: 4/5;
+    header{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
     }
 
     #hmbbtn{
