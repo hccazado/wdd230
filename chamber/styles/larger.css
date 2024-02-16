@@ -23,10 +23,25 @@
     header{
         display: grid;
         grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        margin-left: 2rem;
     }
 
+    header h1{
+        padding-block: 0;
+        width:500px;
+    }
+
+    header >div{
+        gap: 0;
+    }
     #hmbbtn{
         display: none;
+    }
+
+    main{
+        max-width:1100px;
+        margin: 1rem auto;
     }
 
     section .info{
@@ -37,6 +52,13 @@
         overflow-x: hidden;
     }
 
+    footer{
+    padding: 2rem 5rem; 
+    }
+
+    footer > h2{
+        font-size: 2rem;
+    }
     footer > ul{
         flex-direction: row;
     }
