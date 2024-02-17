@@ -102,15 +102,16 @@ header >div img{
 
 #weather{
     display: grid;
-    grid-template: auto / 90px 50px;
+    grid-template: auto / 90px 60px;
     
     align-items: center;
     justify-content: center;
     margin: 0.7rem 0;
 }
 
-#weather div~span{
+#weather div span{
     font-style: italic;
+    font-size: 0.8rem;
 }
 
 #weather img{
