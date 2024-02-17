@@ -44,8 +44,26 @@
         margin: 1rem auto;
     }
 
-    section .info{
-        grid-template-columns: 1fr auto;
+    .about .info{
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+    }
+
+    .about img{
+        width: 400px;
+        height: auto;
+    }
+
+    .highlights{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .highlights .info img{
+        border-radius: 0.5rem;
+        max-width: 500px;
+        height: auto;
     }
 
     .carousel ul{

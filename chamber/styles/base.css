@@ -168,10 +168,12 @@ section .info{
 }
 
 section .info img{
+    width: 400px;
+}
+
+.highlights .info img{
     border-radius: 0.5rem;
-    min-width: 300px;
-    width:35vw;
-    max-width: 40vw;
+    max-width: 400px;
     height: auto;
 }
 
@@ -179,7 +181,7 @@ section .info img{
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap:1rem;
+    gap: 1rem;
     overflow-x: scroll;
 }
 
