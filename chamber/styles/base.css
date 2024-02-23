@@ -209,6 +209,10 @@ footer{
     margin-top: 2rem;
 }
 
+footer h2{
+    text-align: center;
+}
+
 footer > ul{
     display: flex;
     flex-direction: column;
@@ -228,7 +232,7 @@ footer div ul li{
 footer a{
     color:#fff;
     padding: 0.5rem;
-    text-decoration: none; 
+    text-decoration: underline; 
 }
 
 footer a:hover{
@@ -252,6 +256,12 @@ footer div span{
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
 }
+
+footer iframe{
+    width:300px;
+    height: 300px;
+}
+
 #course-info,
 #modified{
     display: block;
