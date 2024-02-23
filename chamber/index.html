@@ -58,7 +58,8 @@
             <img src="images/weather.webp" alt="weather icon">
             <div>
                 <span>Rosario</span>
-                <span>32.5c</span>
+                <span id="temp">32.5c</span>
+                <span id="wchill"></span>
             </div>
         </div>
     </header>
@@ -129,7 +130,7 @@
                         perspiciatis quibusdam ab nostrum repellendus ratione adipisci, minus alias quis voluptas
                         recusandae harum saepe. Ipsum.
                     </p>
-                    <img src="images/mercado-del-patio.webp" alt="">
+                    <img src="images/mercado-del-patio.webp" alt="Rosario's mercado del patio"  loading="lazy">
                 </div>
             </section>
             <section>
@@ -139,7 +140,7 @@
                         context of important maturities that were scheduled to be met in 2021, which would have
                         had a serious impact on the external accounts and on the recovery of our country.
                     </p>
-                    <img src="images/argentina-graph.webp" alt="">
+                    <img src="images/argentina-graph.webp" alt="Argentina economics growing graph" loading="lazy">
                 </div>
             </section>
         </div>
@@ -170,12 +171,13 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13393.112870089728!2d-60.64120499265137!3d-32.94366324429999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab1f468b0789%3A0x48ae3023b886d2af!2sPrefectura%20de%20Zona%20Bajo%20Paran%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1706634515327!5m2!1spt-BR!2sbr"
                     width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade" loading="lazy"></iframe>
             </li>
         </ul>
         <p id="modified"></p>
         <p id="course-info"></p>
     </footer>
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/actions.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/development-info.js"></script>
