@@ -4,7 +4,7 @@ function windchill (temp = 50, wind = 4){
      * @param temp: temperature in Fahrenheit
      * @param wind: windspeed ****/
     
-    chillFactor = "NA";
+    let chillFactor = "NA";
 
     //verifying parameters meets specification limits for calculating wind chill
     if (temp <= 50 && wind > 3.1){
@@ -16,7 +16,9 @@ function windchill (temp = 50, wind = 4){
         document.querySelector("#wchill").innerText = `Chill: ${chillFactor}`;
 
     }
-    document.querySelector("#wchill").innerText = `Chill: NA`;
+    else{
+        document.querySelector("#wchill").innerText = `Chill: NA`;
+    }
 }
 
 windchill();

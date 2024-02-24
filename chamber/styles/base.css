@@ -169,7 +169,12 @@ section .info{
 }
 
 section .info img{
-    width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+.highlights section{
+    width: 450px; 
 }
 
 .highlights .info img{
@@ -295,6 +300,7 @@ Discover Page
 .content section{
     border: 1px solid #aaa;
     padding: .5rem;
+    max-width: 450px;
 }
 
 .content section h2{
@@ -302,11 +308,6 @@ Discover Page
 }
 
 .content section img{
-    width: 350px;
+    width: 100%;
     height: auto;
-    transform: bl;
-}
-
-.content section img:hover{
-    transform: scale(2);
 }
