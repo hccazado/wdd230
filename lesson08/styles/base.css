@@ -1,0 +1,60 @@
+:root{
+    --bgdark: #000;
+    --bgldark: #333;
+    --fglight: #fff;
+    --fgdark: #000;
+    --tbodybg: rgba(187, 184, 185, 0.29);
+    --tableborder: rgba(110, 110, 110, 0.4);
+}
+
+main{
+    width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+thead th, td{
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+tbody th, tbody td{
+    border: 1px solid var(--tableborder);
+    padding: 0.5rem;
+}
+
+table{
+    width: 400px;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+thead{
+    background-color: var(--bgdark);
+    border: var(--bgdark);
+    color: var(--fglight);
+}
+
+thead tr:nth-child(2) th:nth-child(1){
+    background-color: var(--bgdark);
+}
+
+thead tr:nth-child(2){
+    background-color: var(--bgldark);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+tbody tr:nth-child(even){
+    background-color: var(--tbodybg);
+}
+
+caption{
+    caption-side: bottom;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
