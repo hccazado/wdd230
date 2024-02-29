@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="author" content="Heitor Chaves Cazado">
+    <meta name="description" content="Form Build activity for Lesson 8.">
+    <meta property="og:title" content="Heitor Chaves Cazado - WDD230: Form Build">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hccazado.github.io/wdd230/index.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="../images/favicon.ico">
+    <title>Form Build</title>
+</head>
+<body>
+    <header>
+        <img src="../images/profile2.webp" alt="Heitor Chaves Cazado">
+        <h1>Heitor C. Cazado</h1>
+      </header>
+      <div class="hmbBtn">
+      </div>
+      <nav class="navBar">
+        <ul>
+          <li>
+            <a class="active" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="../lesson03/chamber-site-plan.html">Site Plan</a>
+          </li>
+          <li>
+            <a href="../chamber/">Chamber</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.byui.edu/">BYU-Idaho</a>
+          </li>
+          <li>
+            <a target="_blank"
+              href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng#7?lang=eng">Scripture</a>
+          </li>
+        </ul>
+      </nav>
+    <main class="form">
+        <h2>Evaluate this page - Form</h2>
+       <form action="record.html" id="form" method="get">
+        <p id="message"></p>
+        <label>Username <input type="text" id="username" name="username" placeholder="Type your user name" required></label>
+        <label>Password <input type="password" id="password" name="password" placeholder="Type your password" required></label>
+        <label>Confirm Password <input type="password" id="confirmpwd" name="confirmpwd" placeholder="confirm your password" required></label>
+        <label>Email <input type="email" id="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu" name="email" placeholder="user@byui.edu" title="A valid byui.edu email address" required></label>
+        <label>Page Rating: <span id="rg_ot"></span> <input type="range" id="rating" name="rating" min="1" max="10" step="1" list="rangevalues"></label>
+        <datalist id="rangevalues">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </datalist>
+        
+        <input type="submit" id="submit" value="Save Evaluation">
+       </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="ct-year"></span> - Heitor Chaves Cazado - Brazil
+        </p>
+        <p id="lastModified"></p>
+      </footer>
+      <script src="scripts/getdates.js"></script>
+      <script src="scripts/form.js"></script>
+      <script src="../scripts/menu.js"></script>
+</body>
+</html>

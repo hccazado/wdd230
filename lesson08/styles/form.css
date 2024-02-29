@@ -1,0 +1,55 @@
+.form{
+    grid-template-columns: 450px;
+    text-align: left;
+    align-content: center;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.form h2{
+    text-align: center;
+}
+
+.form form input[type="text"],
+.form form input[type="password"],
+.form form input[type="email"],
+.form form input[type="range"]
+{
+    display: block;
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-bottom: 1px solid #0e4581;
+    font-family: figtree, serif;
+    padding: 2%;
+}
+
+.form form label{
+    margin-top: 1rem;
+    display: block;
+    font-family: figtree, serif;
+}
+
+.form form input:required{
+    border-bottom: 2px solid red;
+}
+
+.form form input[type="submit"]{
+    width: 450px;
+    margin-top: 1.5rem;
+    padding: .5rem;
+    border: none;
+    background-color: #ddd;
+    color: #000;
+    box-shadow: 1px 2px 4px #0e4581;
+    font-family: figtree, serif;
+}
+
+.form form #message{
+    display: none;
+    background-color: rgb(245, 196, 202);
+    font-size: 0.8rem;
+    padding: 2%;
+    color: red;
+
+}
