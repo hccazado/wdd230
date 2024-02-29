@@ -1,3 +1,10 @@
+:root{
+    --req-border: 2px solid red;
+    --inp-border: 2px solid #0e4581;
+    --form-font: figtree, serif;
+    --input-height: 44px;
+}
+
 .form{
     grid-template-columns: 450px;
     text-align: left;
@@ -18,21 +25,21 @@
 {
     display: block;
     width: 100%;
-    height: 44px;
+    height: var(--input-height);
     border: none;
-    border-bottom: 1px solid #0e4581;
-    font-family: figtree, serif;
+    border-bottom: var(--inp-border);
+    font-family: var(--form-font);
     padding: 2%;
 }
 
 .form form label{
     margin-top: 1rem;
     display: block;
-    font-family: figtree, serif;
+    font-family: var(--form-font);
 }
 
 .form form input:required{
-    border-bottom: 2px solid red;
+    border-bottom: var(--req-border);
 }
 
 .form form input[type="submit"]{
@@ -44,7 +51,7 @@
     background-color: #ddd;
     color: #000;
     box-shadow: 1px 2px 4px #0e4581;
-    font-family: figtree, serif;
+    font-family: var(--form-font);
 }
 
 .form form #message{
