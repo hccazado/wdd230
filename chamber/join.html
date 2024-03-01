@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
-    <title>Discover Rosario - Chamber of Commerce</title>
+    <title>Rosario Chamber of Commerce</title>
 </head>
 
 <body>
@@ -40,7 +40,7 @@
     <header>
         <div>
             <img src="images/rosario-logo.webp" alt="Rosario city flag">
-            <h1>Discover Rosario</h1>
+            <h1>Rosario Chamber of Commerce</h1>
         </div>
         <div id="weather">
             <img src="images/weather.webp" alt="weather icon">
@@ -57,62 +57,42 @@
         <ul class="navlist">
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="join.html">Subscribe</a></li>
+            <li><a href="#">Subscribe</a></li>
         </ul>
     </nav>
-    <main class="discover-page">
-        <div class="content">
-            <section>
-                <h2>Welcome!</h2>
-                <p id="dp-wm">
-                    
-                </p>
-            </section>
-            
-            <section>
-                <h2>Discover Rosario</h2>
-                <p>
-                    Rosario, Santa Fé's greatest city. Located on Parana's riverside, it counts with 1.009.037
-                    inhabitants.
-                </p>
-            </section>
-
-            <section>
-                <h2>Demographic Growth</h2>
-                <p>
-                    Rosario represents Argentina's third metropolitan region. With consistent demographic growth, it's
-                    a city of opportunities and fast exporting since it has one of the biggest ports in the country.
-                </p>
-                <img src="images/crecimineto-rosario.webp" alt="Rosario metropolitan region growth">
-            </section>
-
-            <section>
-                <h2>Meet Fito Paez</h2>
-                <p>
-                    Fito Paez one of the biggest names in Argentina and Latin America Rock is proudly from Rosario.
-                     <a target="_blank" href="https://rosario.tur.ar/circuitos/por-tu-cuenta/circuito-fito-paez">Discover Paez!</a>
-                </p>
-                <img src="images/gallery/paez.webp" alt="Fito Paez profile picture">
-            </section>
-
-            <section>
-                <h2>Meet Lionel Messi</h2>
-                <p>
-                    Lionel Messi, undoubtedly Argentina's greatest soccer player born in Rosario, started its career on Newels old Boys.
-                     <a target="_blank" href="https://rosario.tur.ar/circuitos/por-tu-cuenta/circuito-messi">Discover Messi!</a>
-                </p>
-                <img src="images/gallery/messi.webp" alt="Lionel Messi profile picture">
-            </section>
-        </div>
-        <div class="gallery">
-            <img src="images/gallery/letrero.webp" alt="placeholder" loading="lazy">
-            <img src="images/gallery/elcairo.webp" alt="placeholder" loading="lazy">
-            <img src="images/gallery/costanera.webp" alt="placeholder" loading="lazy">
-            <img src="images/gallery/independencia.webp" alt="placeholder" loading="lazy">
-            <img src="images/gallery/rockfeller.webp" alt="placeholder" loading="lazy">
-            <img src="images/gallery/terminal.webp" alt="placeholder" loading="lazy">
-        </div>
-
+    <main class="wf-container">
+        <h2>Apply To Become A New Member</h2>
+        <form class="wf-join" action="thankyou.html" method="get">
+            <input type="hidden" id="timestamp" name="timestamp">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name* <input type="text" id="fname" name="fname" required></label>
+                <label>Last Name* <input type="text" id="lname" name="lname" required></label>
+                <label>Email* <input type="email" id="email" name="email" required></label>
+                <label>Mobile Phone* <input type="tel" id="mobile" name="mobile" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Organization & Job Position</legend>
+                <label>Job title* <input type="text" id="job" name="job" pattern="[a-zA-Z0-9 -]{7,}" required></label>
+                <label>Organization Name* <input type="text" id="organization" name="organization" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Choose Your Membership Level</legend>
+                <div>
+                    <label><input type="radio" name="membership" value="np"> Non profit</label>
+                    <label><input type="radio" name="membership" value="bronze"> Bronze</label>
+                    <label><input type="radio" name="membership" value="silver"> Silver</label>
+                    <label><input type="radio" name="membership" value="gold"> Gold</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Organization Description</legend>
+                <label>Describe Your Organization
+                    <textarea id="description" name="description"></textarea>
+                </label>
+            </fieldset>
+            <button type="submit" value=>Subscribe For A Membership</button>
+        </form>
     </main>
     <footer>
         <h2>Rosario Chamber of Commerce</h2>
@@ -123,7 +103,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="discover.html">Discover</a></li>
-                        <li><a href="join.html">Subscribe</a></li>
+                        <li><a href="#">Subscribe</a></li>
                     </ul>
                 </div>
             </li>
@@ -146,7 +126,6 @@
         <p id="modified"></p>
         <p id="course-info"></p>
     </footer>
-    <script src="scripts/welcome.js"></script> 
     <script src="scripts/windchill.js"></script>
     <script src="scripts/actions.js"></script>
     <script src="scripts/menu.js"></script>
