@@ -322,18 +322,25 @@ Discover Page
 /*####################################################################
 Join Page - Form
 ####################################################################*/
+.wf-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
 .wf-container h2{
     text-align: center;
-}
-.wf-join{
-    margin:0 auto;
-    width:600px;
     max-width: 100%;
+}
+
+.wf-join{
+    margin: 0 auto;
+    width: 100%;
 }
 
 .wf-join fieldset{
     margin-top: 1rem;
-    padding: .5rem;
+    padding: .6rem;
 }
 
 .wf-join label{
@@ -342,7 +349,7 @@ Join Page - Form
     font-size: 0.9rem;
     color: var(--dark-blue);
     font-weight: 700;
-    margin-top: 2%;
+    margin-top: .8rem;
 }
 
 .wf-join input[type="text"],
@@ -372,5 +379,41 @@ Join Page - Form
 .wf-join button[type="submit"]:hover{
     background-color: var(--accent-color1);
     color:#000;
+}
+
+.wf-container section p{
+    font-size: 1rem;
+}
+
+.wf-container section{
+    width: 100%;
+}
+
+.wf-container table{
+    border-collapse: collapse;
+    margin-top: 2rem;
+    max-width: 100%;
+}
+
+.wf-container table td, 
+.wf-container table th{
+    border: 1px solid #ccc;
+    padding: .2rem;
+}
+
+.wf-container table td{
+    font-size: 0.9rem;
+    padding: 0.2rem;
+}
+.wf-container table thead tr:nth-child(1){
+    background-color: #ddf;
+}
+
+.wf-container table thead tr:nth-child(2) td:nth-child(1){
+    background-color: #ddf;
+}
+
+.wf-container table tbody tr:nth-child(even){
+    background-color: #ddf;
 }
 
