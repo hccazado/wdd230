@@ -1,0 +1,29 @@
+{
+    "familyName": "Chaves",
+    "MovedDate": "2022-02-13",
+    "sizeFamily": 3,
+    "visitedByBisphoric": "No",
+    "members":[
+        {
+            "name": "Heitor Chaves",
+            "gender": "M",
+            "birthDate":"1993-06-28"
+        },
+        {
+            "name": "Jose Chaves",
+            "gender": "M",
+            "birthDate":"1962-08-19"
+        },
+        {
+            "name": "Maria Chaves",
+            "gender": "F",
+            "birthDate":"1962-12-20"
+        },
+        {
+            "name": "Felipi Chaves",
+            "gender": "M",
+            "birthDate":"1988-13-06"
+        }
+    ]
+
+}
