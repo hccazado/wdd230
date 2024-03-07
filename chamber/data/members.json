@@ -1,0 +1,60 @@
+{
+    "members":[
+        {
+            "name": "La morada",
+            "address": "Av. Francia 996",
+            "phone": "+54 341 436-1076",
+            "website": "",
+            "image": "/images/members/morada.webp",
+            "membership": "gold" 
+        },
+        {
+            "name": "El Palacio De La Oportunidad",
+            "address": "Corrientes 999",
+            "phone": "",
+            "website": "https://www.elpalaciodelaoportunidad.com/",
+            "image": "images/members/palacio.webp",
+            "membership": "silver" 
+        },
+        {
+            "name": "El Viejo Balcon",
+            "address": "Av. Wheelwright 1815",
+            "phone": "+54 341 425-5611",
+            "website": "https://www.viejobalcon.com/",
+            "image": "images/members/viejo-balcon.webp",
+            "membership": "gold"
+        },
+        {
+            "name": "Dunod Propiedades",
+            "address": "AV. Cordoba 2434",
+            "phone": "+54 341 420-4500",
+            "website": "http://www.dunod.com.ar/",
+            "image": "images/members/dunod.webp",
+            "membership": "silver" 
+        },
+        {
+            "name": "La Gallega Supermercado",
+            "address": "Av. Pellegrini 1194",
+            "phone": "+54 341 480-1909",
+            "website": "https://www.lagallega.com.ar/login.asp",
+            "image": "images/members/gallega.webp",
+            "membership": "bronze" 
+        },
+        {
+            "name": "Arcano Informática",
+            "address": "Cafferata 1105",
+            "phone": "+54 341 348-7076",
+            "website": "https://www.arcanoinformatica.com.ar/",
+            "image": "images/members/arcano.webp",
+            "membership": "silver" 
+        },
+        {
+            "name": "Tierra del té",
+            "address": "Cafferata 729",
+            "phone": "",
+            "website": "https://www.instagram.com/tierradelte/",
+            "image": "images/members/tierra-del-te.webp",
+            "membership": "bronze"
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heitor Chaves Cazado">
+    <meta name="description"
+        content="Rosario Chamber of Commerce is an ONG that leads the strengthening of associated businesses, 
+                                      and empowers local population with tools to develop a better social environment.">
+    <meta property="og:title" content="Rosario Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hccazado.github.io/wdd230/chamber/">
+    <meta property="og:image" content="https://hccazado.github.io/wdd230/chamber/images/rosario-monumento.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Rosario Chamber of Commerce</title>
+</head>
+
+<body>
+    <div class="herobox">
+        <div class="actions">
+            <ul class="social">
+                <li><a target="_blank" href="https://www.instagram.com"><img src="images/instagram.webp"
+                            alt="link to social media instagram"></a></li>
+                <li><a target="_blank" href="https://www.facebook.com"><img src="images/facebook.webp"
+                            alt="link to social media facebook"></a></li>
+                <li><button id="mode">🌘</button></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div>
+            <img src="images/rosario-logo.webp" alt="Rosario city flag">
+            <h1>Rosario Chamber of Commerce</h1>
+        </div>
+        <div id="weather">
+            <img src="images/weather.webp" alt="weather icon">
+            <div>
+                <span>Rosario</span>
+                <span id="temp">32.5c</span>
+                <span id="wchill"></span>
+            </div>
+        </div>
+    </header>
+
+    <div id="hmbbtn"></div>
+    <nav>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="join.html">Subscribe</a></li>
+        </ul>
+    </nav>
+    <main class="wf-container">
+
+    </main>
+    <footer>
+        <h2>Rosario Chamber of Commerce</h2>
+        <ul>
+            <li>
+                <div>
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="join.html">Subscribe</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="tel:+543412226336">341 222-6336</a></li>
+                        <li><a href="mailto:support@rosarioccommerce.com.ar">E-mail support</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13393.112870089728!2d-60.64120499265137!3d-32.94366324429999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab1f468b0789%3A0x48ae3023b886d2af!2sPrefectura%20de%20Zona%20Bajo%20Paran%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1706634515327!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    loading="lazy"></iframe>
+            </li>
+        </ul>
+        <p id="modified"></p>
+        <p id="course-info"></p>
+    </footer>
+    <script src="scripts/members.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/actions.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/development-info.js"></script>
+</body>
+
+</html>
