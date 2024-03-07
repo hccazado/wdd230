@@ -1,0 +1,133 @@
+{ 
+    "lessons":[
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy Grail"
+                },
+                {
+                    "url": "https://codepen.io/hccazado/pen/ExMyPpM",
+                    "title": "Code Pen"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "lesson01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles Document"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "lesson03/images/css-combinator-exercises.png",
+                    "title": "CSS Combinator Exercise"
+                },
+                {
+                    "url": "lesson01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://codepen.io/hccazado/pen/JjzydVL",
+                    "title": "Code Pen - CSS Pseudo-elements"
+                },
+                {
+                    "url": "https://codepen.io/hccazado/pen/xxBLzWr",
+                    "title": "Code Pen - Responsive Menu"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links":[
+                {
+                    "url": "https://codepen.io/hccazado/pen/QWoaVjy",
+                    "title": "Code Pen - Pseudo-classes"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links":[
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "BOM - Fav. Scriptures (DOM manipulation)"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links":[
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "Webp"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links":[
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy load"
+                },
+                {
+                    "url": "lesson07/bom.html",
+                    "title": "BOM - Enhanced Version (Local Storage) - Local Storage"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links":[
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "lesson08/webformbuild.html",
+                    "title": "Building Web Forms"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form Build Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links":[
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "JSON file"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Latter-day Prophets"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form Build Activity"
+                }
+            ]
+        }
+    ]
+}
