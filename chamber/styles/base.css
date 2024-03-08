@@ -420,3 +420,91 @@ Join Page - Form
 /*####################################################################
 Members page
 ####################################################################*/
+.members-container.view-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 1rem;
+    background-color: #ddd;
+    padding: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    margin-top: 0;
+}
+
+.members-container.view-list{
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    margin-top: 0;
+    max-width: 100%;
+}
+
+#members-view{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #ddd;
+    margin-bottom: 0;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    padding: .5rem;
+}
+
+#members-view > button{
+    font-size: 2rem;
+}
+
+.view-grid section{
+    border: 1px solid #ccc;
+    padding: .8rem;
+    border-radius: 2%;
+    background-color: var(--dark-blue);
+    color: #fff;
+}
+
+.view-grid h3{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.view-grid p{
+    font-size: 1.1rem;
+    margin-top: .3rem;
+}
+
+.view-grid img{
+    width: 350;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: .5rem;
+}
+
+.view-grid a{
+    color: #fff;
+}
+
+.view-list img{
+    display: none;
+}
+
+.view-list section{
+    margin: 0;
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.view-list p{
+    justify-self: start;
+    align-self: center;
+    padding: 1rem;
+}
+
+.view-list section:nth-child(even){
+    background-color: #fff;
+}

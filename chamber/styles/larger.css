@@ -132,4 +132,25 @@
         grid-column: 1/2;
     }
 
+    .view-grid section a:hover{
+        color: var(--light-blue);
+    }
+
+    .view-grid p{
+        font-size: .9rem;
+    }
+
+    .view-grid section:hover{
+        box-shadow: 0 0 25px var(--dark-blue);
+    }
+
+    .view-list h3{
+        margin-left: 1rem;
+    }
+
+    .view-list section:hover{
+        border: 1px solid var(--dark-blue);
+        box-shadow: 0 0 5px var(--dark-blue);
+    }
+
 }
