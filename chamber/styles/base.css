@@ -475,7 +475,7 @@ Members page
 }
 
 .view-grid img{
-    width: 350;
+    width: 350px;
     max-width: 100%;
     height: auto;
     object-fit: cover;
