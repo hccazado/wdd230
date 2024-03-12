@@ -419,7 +419,7 @@ Join Page - Form
 }
 
 /*####################################################################
-Members page
+Directory page
 ####################################################################*/
 .members-container.view-grid{
     display: grid;
@@ -476,6 +476,7 @@ Members page
 }
 
 .view-grid img{
+    background-color: #ddd;
     width: 350px;
     max-width: 100%;
     height: auto;
