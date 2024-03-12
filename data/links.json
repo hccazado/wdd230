@@ -124,6 +124,15 @@
                     "title": "Latter-day Prophets"
                 }
             ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "lesson10/weather.html",
+                    "title": "Fetching 3rd Party API (OpenWeatherMap)"
+                }
+            ]
         }
     ]
 }
