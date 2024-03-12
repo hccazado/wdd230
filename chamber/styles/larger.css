@@ -35,6 +35,10 @@
         display: none;
     }
 
+    #wt-container{
+        width: 300px;
+    }
+
     main{
         max-width:1100px;
         margin: 1rem auto;
