@@ -151,6 +151,10 @@ nav a:hover {
   margin-top: 0;
 }
 
+#wt-icon{
+  padding-top: .5rem;
+}
+
 .card p{
   margin: .5rem;
 }

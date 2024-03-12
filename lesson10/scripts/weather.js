@@ -1,5 +1,3 @@
-49.77, 6.66
-
 //document elements
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
