@@ -16,10 +16,6 @@
         left: 7rem;
     }
 
-    .social{
-        left: 7rem;
-    }
-
     header{
         display: grid;
         grid-template-columns: 2fr 1fr;
