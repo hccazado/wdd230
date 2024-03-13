@@ -213,6 +213,52 @@ nav ul li a:hover{
     color: #000;
 }
 
+#hp-banner{
+    background-color: var(--accent-color1);
+    position: fixed;
+    bottom: 0;
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    box-shadow: 0 0 15px 15px var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+}
+
+#hp-banner img{
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#hp-banner h3{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#hp-banner div{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    font-size: 1.2rem;;
+}
+#banner-btn{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    
+}
+#banner-btn::before{
+    content: "❎";
+    font-size: 36px;
+}
+
+
 main{
     padding: 1rem;
     margin-top: 0;
