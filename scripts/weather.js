@@ -21,7 +21,6 @@ async function fetchWeather(){
 }
 
 function displayWeather(data){
-    console.log(data)
     temp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
     icon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
     icon.setAttribute("alt", `Weather icon: ${data.weather[0].description}`);

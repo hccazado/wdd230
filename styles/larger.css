@@ -7,7 +7,7 @@
     }
     main{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.25fr .75fr;
     }
     main h2{
         grid-column: 1/3;
