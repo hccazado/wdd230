@@ -1,4 +1,3 @@
--18.93739511110886, -47.00203348782026
 const url = "https://api.openweathermap.org/data/2.5/weather?lon=-18.94&lat=-47.00&unit=imperial&appid=d3073afe388cc183a5167cc059a2173a"
 
 const temp = document.querySelector("#ct-temp");
