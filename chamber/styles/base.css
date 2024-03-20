@@ -161,6 +161,11 @@ header >div img{
     padding: .2rem;
 }
 
+#wt-temp,
+#wt-desc{
+    font-weight: 700;
+}
+
 #wt-forecast div img{
     width: 40px;
     height: auto;
