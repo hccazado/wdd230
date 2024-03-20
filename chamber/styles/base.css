@@ -222,6 +222,10 @@ nav ul li a:hover{
     color: #000;
 }
 
+.active{
+    border-bottom: 4px solid var(--accent-color1);
+}
+
 #hp-banner{
     background-color: var(--accent-color1);
     position: fixed;
@@ -316,13 +320,13 @@ section .info img{
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    overflow-x: scroll;
+    overflow-x: auto;
+    width: 100%;
 }
 
+#affiliated li,
 .carousel ul li{
-    min-width: 200px;
-    width: 350px;
-    max-width:350px;
+    min-width: 250px;
     border: 1px solid #ccc;
     padding:1rem;
     box-shadow: 0 2px 5px var(--dark-blue);
@@ -475,7 +479,6 @@ Join Page - Form
 .wf-join label{
     display: block;
     padding: .2rem;
-    font-size: 0.9rem;
     color: var(--dark-blue);
     font-weight: 700;
     margin-top: .8rem;
