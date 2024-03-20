@@ -1,4 +1,4 @@
-const url = "https://api.openweathermap.org/data/2.5/weather?lon=-18.94&lat=-47.00&unit=imperial&appid=d3073afe388cc183a5167cc059a2173a"
+const url = "https://api.openweathermap.org/data/2.5/weather?lon=-18.94&lat=-47.00&units=imperial&appid=d3073afe388cc183a5167cc059a2173a"
 
 const temp = document.querySelector("#ct-temp");
 const icon = document.querySelector("#wt-icon");
