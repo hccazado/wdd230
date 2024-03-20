@@ -178,9 +178,13 @@ header >div img{
 }
 
 .hero{
-    aspect-ratio: 2/1 ;
-    height: 100%;
-    width: 100vw;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-title{
+    position: relative;
 }
 
 nav{
@@ -316,6 +320,8 @@ section .info img{
     max-width:350px;
     border: 1px solid #ccc;
     padding:1rem;
+    box-shadow: 0 2px 5px var(--dark-blue);
+    margin: 5px;
 }
 .carousel ul li span{
     display: block;
@@ -406,29 +412,34 @@ Discover Page
 .gallery{
     display: grid;
     grid-template-rows: 1fr;
-    gap: .5rem;
+    gap: .8rem;
     row-gap: 1rem;
 }
 
-.gallery img {
+.discover-page section:nth-child(1){
+    margin-top: 0;
+    box-shadow: 2px 2px 7px var(--dark-blue);
+}
+
+.discover-page img{
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
     width: 100%;
     height: auto;
+    object-fit: cover;
     background-color: #ccc;
+    box-shadow: 2px 2px 7px var(--dark-blue);
 }
 
 .content section{
     border: 1px solid #aaa;
     padding: .5rem;
+    box-shadow: 2px 2px 7px var(--dark-blue);
+    border-radius: .2rem;
 }
 
 .content section h2{
     padding-top: .5rem;
-}
-
-.content section img{
-    margin-top: 1rem;
-    width: 100%;
-    height: auto;
 }
 
 

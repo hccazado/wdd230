@@ -124,11 +124,11 @@
     }
 
     .gallery img:hover{
-        box-shadow: 0 0 50px #333;
+        box-shadow: 0 0 20px var(--dark-blue);
     }
 
     .content section img:hover{
-        transform: scale(1.4);
+        box-shadow: 0 0 15px var(--dark-blue);
     }
 
 

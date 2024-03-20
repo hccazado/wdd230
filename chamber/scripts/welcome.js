@@ -2,7 +2,7 @@ function welcomeMessage(){
 
     let lastVisit = localStorage.getItem("lastVisit") || Date.now();
     let currentDate = Date.now();
-    const dayMs = 84600000;
+    const dayMs = 86400000;
 
     if (lastVisit == currentDate){
         localStorage.setItem("lastVisit", currentDate);
@@ -14,7 +14,7 @@ function welcomeMessage(){
     }
     else{
         localStorage.setItem("lastVisit", currentDate);
-        return `You last visited ${lastVisit/dayMs} days ago.`;
+        return `You last visited ${(lastVisit/dayMs).toFixed(0)} days ago.`;
     }
 
 }

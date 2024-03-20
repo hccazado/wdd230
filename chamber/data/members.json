@@ -30,7 +30,7 @@
             "phone": "+54 341 420-4500",
             "website": "http://www.dunod.com.ar/",
             "image": "images/members/dunod.webp",
-            "membership": "silver" 
+            "membership": "gold" 
         },
         {
             "name": "La Gallega Supermercado",
@@ -46,7 +46,7 @@
             "phone": "+54 341 348-7076",
             "website": "https://www.arcanoinformatica.com.ar/",
             "image": "images/members/arcano.webp",
-            "membership": "silver" 
+            "membership": "gold" 
         },
         {
             "name": "Tierra del té",

@@ -1,4 +1,4 @@
-const url = "https://api.openweathermap.org/data/2.5/forecast?lat=-32.95&lon=-60.66&appid=114c50b10d3b5b49806965727c247f57";
+const url = "https://api.openweathermap.org/data/2.5/forecast?lat=-32.9468&lon=-60.6393&units=imperial&appid=114c50b10d3b5b49806965727c247f57";
 
 const wticon = document.querySelector("#wt-icon");
 const wttemp = document.querySelector("#wt-temp")
