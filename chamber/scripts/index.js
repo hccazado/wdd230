@@ -22,20 +22,31 @@ async function getBusinessesData(){
 
 
 function displayBusiness(businesses){
-    const gold = businesses.members.filter(business =>{
-        if(business.membership == "gold"){
+    const vipMembers = businesses.members.filter(business =>{
+        if(business.membership == "gold" || business.membership == "silver"){
             return business;
         }
     });
 
+    let i = 0;
+    let randomMembers = [];
+
+    while (i<=2){
+        let random = Math.floor(Math.random()*vipMembers.length);
+        if(!randomMembers.includes(random)){
+            randomMembers.push(random);
+            i++;
+        }
+    }
+
     affiliated.innerHTML = "";
 
-    gold.forEach(member=>{
+    randomMembers.forEach(business=>{
         affiliated.innerHTML+=`
         <li>
-        <h3>${member.name}</h3>
-        <span>${member.address}</span>
-        <span><a href="tel:${member.phone}">${member.phone}</a></span>
+        <h3>${vipMembers[business].name}</h3>
+        <span>${vipMembers[business].address}</span>
+        <span><a href="tel:${vipMembers[business].phone}">${vipMembers[business].phone}</a></span>
         </li>
         `;
         
