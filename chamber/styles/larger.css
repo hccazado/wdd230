@@ -87,8 +87,13 @@
     }
 
     .carousel ul{
-        overflow-x: auto;
+        flex-direction: row;
     }
+
+    #affiliated li,
+    .carousel ul li{
+        min-width: 250px;
+}
 
     footer h2{
         text-align: left;
