@@ -402,6 +402,11 @@ footer iframe{
     height: 300px;
 }
 
+footer .map{
+    width:300px;
+    height: 300px;
+}
+
 #course-info,
 #modified{
     display: block;
