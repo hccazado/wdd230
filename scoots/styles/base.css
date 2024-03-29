@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(245, 222, 179, 0.8);
+}
+
+header a{
+    color: #000;
+}
+
+header div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    justify-self: end;
+    margin-right: 2rem;
+    justify-content: center;
+}
+
+header a{
+    text-decoration: none;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+}
+.social img{
+    width: 36px;
+}
+.social{
+    align-content: center;
+}
+
+#menuBtn{
+    position: absolute;
+    top: 1rem;
+    right: 0rem;
+    padding: .7rem;
+    border: 1px solid #000;
+    border-radius: .3rem;
+}
+
+#menuBtn::before{
+    content: "🟰";
+}
+
+#navbar.show{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    height: 87.5%;
+    z-index: 10;
+    background-color: #F5DEB3;
+}
+
+#navbar{
+    display: none;
+    flex-direction: column;
+    list-style: none;
+}
+#navbar li{
+    flex: 1 1 100%;
+}
+
+#navbar a{
+    display: block;
+    width:100%;
+    height: 48px;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000;
+}
+
+#navbar a:hover{
+    background-color: #00CED1;
+    color: #000;
+}
+
+.heroContainer{
+    position: relative;
+}
+
+.heroContainer img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.heroContainer button{
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+}
+
+.reserveBtn{
+    border: none;
+    padding: 1rem;
+    background-color: #FF6F61;
+    border-radius: .5rem;
+}
+
+.reserveBtn:hover{
+    background-color: #5F9EA0;
+    border: 2px solid #FF6F61;
+}
+
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section{
+    margin: 3rem auto;
+    text-align: left;
+}
+
+section h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section .vehicles{
+    display: flex;
+    justify-content: space-around;
+}
+
+.vehicles img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.info{
+    position: relative;
+    display: grid;
+    grid-template-columns: .25fr .75fr;
+    gap: 1rem;
+}
+
+.info li{
+    margin-bottom: .5rem;
+}
+
+.info h4{
+    margin-bottom: 1.2rem;
+}
+
+.info .reserveBtn{
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+
+#weather{
+    margin-top: 1rem;
+    width: 100%;
+    height: 120px;
+    border: 1px solid #cce;
+    border-radius: .5rem; 
+}
+
+#weather span{
+    display: inline-block;
+    padding: .2rem;
+    margin-left: 1rem;
+}
+
+#weather div:nth-child(1){
+    display: grid;
+    grid-template-columns: 60px 170px;
+}
+#weather div:nth-child(3){
+    text-align: center;
+}
+
+footer{
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #F5DEB3;
+}
