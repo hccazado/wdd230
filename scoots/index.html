@@ -39,6 +39,21 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
+    <div id="weather">
+        <div>
+            <img id="wt-icon" alt="weather logo" src="https://openweathermap.org/img/wn/10d.png">
+        </div>
+        <div>
+            <div>
+                <span id="wt-temp"></span>
+                <span id="wt-hum"></span>
+            </div>
+        </div>
+        <div>
+            <span>Tomorrow 15:00</span>
+            <span id="fc-temp"></span>
+        </div>
+    </div>
     <div class="heroContainer">
         <img src="images/hero.webp" alt="Cozumel island">
         <button class="reserveBtn">Reserve Your Scooter</button>
@@ -47,52 +62,48 @@
         <section>
             <h3>Your Adventure, Your Style</h3>
             <div class="vehicles">
-                <img src="images/scooter.webp" alt="Scooter icon">
-                <img src="images/atv.webp" alt="ATV icon">
-                <img src="images/jeep.webp" alt="Jeep icon">
+                <div class="vehicle-container">
+                    <img src="images/scooter.webp" alt="Scooter icon">
+                </div>
+                <div class="vehicle-container">
+                    <img src="images/atv.webp" alt="ATV icon">
+                </div>
+                <div class="vehicle-container">
+                    <img src="images/jeep.webp" alt="Jeep icon">
+                </div>
             </div>
         </section>
-        <section>
+        <section class="vehicles-list">
             <h3>What You Can Ride On Your Next Adventure</h3>
-            <div class="info">
-                <div id="weather">
-                    <div class="wt-now">
-                        <img id="wt-icon" alt="weather logo" src="https://openweathermap.org/img/wn/10d.png">
-                        <div>
-                            <span id="wt-temp"></span>
-                            <span id="wt-hum"></span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="wt-fc">
-                        <span>Tomorrow 15:00</span>
-                        <span id="fc-temp"></span>
-                    </div>
-                </div>
-                <div>
-                    <ul>
-                        <li>Scooters: Ideal for solo travelers or couples looking for an economical and fun way to
-                            explore the island at their own pace.
-                        </li>
-                        <li>
-                            ATVs: Also known as quad bikes or four-wheelers, offer an exhilarating way to explore
-                            Cozumel's rugged terrain, including jungle trails and off-road paths.
-                        </li>
-                        <li>
-                            Jeeps: Provide ample space for small groups or families, making them an ideal choice for
-                            those traveling with children or larger parties. You may choose optional features such as
-                            convertible tops.
-                        </li>
-                    </ul>
-                    <button class="reserveBtn">Reserve Your Ride</button>
-                </div>
-            </div>
+            <ul>
+                <li><strong>Scooters:</strong> Ideal for solo travelers or couples looking for an economical and
+                    fun way to
+                    explore the island at their own pace.
+                </li>
+                <li>
+                    <strong>ATVs:</strong> Also known as quad bikes or four-wheelers, offer an exhilarating way
+                    to explore
+                    Cozumel's rugged terrain, including jungle trails and off-road paths.
+                </li>
+                <li>
+                    <strong>Jeeps:</strong> Provide ample space for small groups or families, making them an
+                    ideal choice for
+                    those traveling with children or larger parties. You may choose optional features such as
+                    convertible tops.
+                </li>
+            </ul>
+            <button class="reserveBtn">Reserve Your Ride</button>
         </section>
-        <section>
-            <h3>Cozumel, A unique Island</h3>
-            <p>Cozumel is a stunning island located off the eastern coast of Mexico's Yucatán Peninsula, in the
-                Caribbean Sea. The island is renowned for its breathtaking natural beauty, including pristine white-sand
-                beaches, crystal-clear turquoise waters, and lush tropical landscapes.</p>
+        <section class="island-info">
+            <h3>Cozumel, Our Magical Caribbean Island</h3>
+            <div>
+                <img class="img-shadow" src="images/cozumel-letrero.webp" alt="Cozumel beach" loading="lazy">
+                <p>Cozumel is a stunning island located off the eastern coast of Mexico's Yucatán Peninsula, in the
+                    Caribbean Sea. The island is renowned for its breathtaking natural beauty, including pristine
+                    white-sand
+                    beaches, crystal-clear turquoise waters, and lush tropical landscapes.
+                </p>
+            </div>
         </section>
     </main>
     <footer>

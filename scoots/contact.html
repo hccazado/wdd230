@@ -39,15 +39,55 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    <main>
+    <div id="weather">
+        <div>
+            <img id="wt-icon" alt="weather logo" src="https://openweathermap.org/img/wn/10d.png">
+        </div>
+        <div>
+            <div>
+                <span id="wt-temp"></span>
+                <span id="wt-hum"></span>
+            </div>
+        </div>
+        <div>
+            <span>Tomorrow 15:00</span>
+            <span id="fc-temp"></span>
+        </div>
+    </div>
+    <main class="grid-columns">
+        <h3>Contact Us</h3>
+        <div class="contact-form">
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" required placeholder="type your name">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" placeholder="me@email.com" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <label for="message"></label>
+                    <textarea id="message" name="message" required></textarea>
+                </fieldset>
+                <button type="submit">Send Your Message</button>
+            </form>
+        </div>
+        <div>
+            <h4>Our Stores</h4>
 
+            <iframe
+                src="https://www.google.com/maps/d/u/0/embed?mid=1pRvR8XtqkDwRSwrtslcHXxY32B7VCg0&ehbc=2E312F&noprof=1"
+                loading="lazy"></iframe>
+        </div>
     </main>
     <footer>
         <h2>Scoots&reg;</h2>
         <a href="references.html">References</a>
         <p>Heitor Chaves Cazado | BYU-I WDD230</p>
     </footer>
-    <script src=""></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>
