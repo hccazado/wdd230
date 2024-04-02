@@ -285,6 +285,10 @@ section .vehicles{
     border: 1px solid #8D9980;
 }
 
+.radio label{
+    display: inline;
+}
+
 .grid-columns legend{
     font-family: var(--body-font);
     margin-left: .5rem;
@@ -326,6 +330,10 @@ section .vehicles{
     font-size: 1rem;
     border: none;
     box-shadow: 0 0 5px #374067; 
+}
+
+.grid-columns form input[type="radio"]{
+    display: inline;
 }
 
 .grid-columns h4{
