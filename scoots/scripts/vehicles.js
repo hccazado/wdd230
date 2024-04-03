@@ -1,0 +1,1 @@
+const listUrl = "https://hccazado.github.io/wdd230/scoots/data/vehicles.json";
