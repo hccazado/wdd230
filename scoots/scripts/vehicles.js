@@ -16,7 +16,7 @@ async function fetchVehicles(){
     }
 }
 
-function vehiclesTable(vehicles){
+function vehiclesTable(data){
 
     let imagesLine = document.createElement("tr");
     let namesLine = document.createElement("tr");
@@ -30,14 +30,20 @@ function vehiclesTable(vehicles){
         let image = document.createElement("td");
         image.innerText = "Image";
         imagesLine.append(image);
-        vehicles.scooters.forEach(vehicle =>{
-            let td = document.createElement("td");
-            let img = document.createElement("img");
-            img.setAttribute("src", `images/${vehicle.img}`);
-            img.setAttribute("alt", `${vehicle.name} picture`);
-            td.appendChild(img)
-            imagesLine.append(td);
+        data.vehicles.forEach(category =>{
+            console.log(category);
+        })
+        data.vehicles.forEach(vehicles =>{
+            vehicles.forEach(vehicle=>{
+                let td = document.createElement("td");
+                let img = document.createElement("img");
+                img.setAttribute("src", `images/${vehicle.img}`);
+                img.setAttribute("alt", `${vehicle.name} picture`);
+                td.appendChild(img)
+                imagesLine.append(td);
+            });
         });
+            
         vrData.appendChild(imagesLine);
     }
 
@@ -45,10 +51,12 @@ function vehiclesTable(vehicles){
         let name = document.createElement("td");
         name.innerText = "Name";
         namesLine.append(name);
-        vehicles.scooters.forEach(vehicle =>{
-            let td = document.createElement("td");
-            td.innerHTML = vehicle.name;
-            namesLine.append(td);
+        data.vehicles.forEach(vehicles =>{
+            vehicles.forEach(vehicle=>{
+                let td = document.createElement("td");
+                td.innerHTML = vehicle.name;
+                namesLine.append(td);
+            });
         });
         vrData.appendChild(namesLine);
     }
@@ -57,10 +65,12 @@ function vehiclesTable(vehicles){
         let cap = document.createElement("td");
         cap.innerText = "capacity";
         capcacityLine.append(cap);
-        vehicles.scooters.forEach(vehicle =>{
-            let td = document.createElement("td");
-            td.innerHTML = vehicle.capacity;
-            capcacityLine.append(td);
+        data.vehicles.forEach(vehicles =>{
+            vehicles.forEach(vehicle=>{
+                let td = document.createElement("td");
+                td.innerHTML = vehicle.capacity;
+                capcacityLine.append(td);
+            });
         });
         vrData.appendChild(capcacityLine);
     }
@@ -69,10 +79,12 @@ function vehiclesTable(vehicles){
         let price = document.createElement("td");
         price.innerText = "Reserve half-day(3h)";
         reserveHalfLine.append(price);
-        vehicles.scooters.forEach(vehicle =>{
-            let td = document.createElement("td");
-            td.innerHTML =`${parseInt(vehicle.prices.reservation.halfDay).toFixed(2)}U$`;
-            reserveHalfLine.append(td);
+        data.vehicles.forEach(vehicles =>{
+            vehicles.forEach(vehicle=>{
+                let td = document.createElement("td");
+                td.innerHTML =`${parseInt(vehicle.prices.reservation.halfDay).toFixed(2)}U$`;
+                reserveHalfLine.append(td);
+            });
         });
         vrData.appendChild(reserveHalfLine);
     }
@@ -81,11 +93,13 @@ function vehiclesTable(vehicles){
         let price = document.createElement("td");
         price.innerText = "Reserve full-day";
         reserveFullLine.append(price);
-        vehicles.forEach(category=>{console.log(category)});
-        vehicles.scooters.forEach(vehicle =>{
-            let td = document.createElement("td");
-            td.innerHTML = `${parseInt(vehicle.prices.reservation.fullDay).toFixed(2)}U$`;
-            reserveFullLine.append(td);
+        reserveHalfLine.append(price);
+        data.vehicles.forEach(vehicles =>{
+            vehicles.forEach(vehicle=>{
+                let td = document.createElement("td");
+                td.innerHTML = `${parseInt(vehicle.prices.reservation.fullDay).toFixed(2)}U$`;
+                reserveFullLine.append(td);
+            });
         });
         vrData.appendChild(reserveFullLine);
     }
@@ -94,11 +108,14 @@ function vehiclesTable(vehicles){
         let price = document.createElement("td");
         price.innerText = "Walk-In half-day(3h)";
         walkinHalfLine.append(price);
-        vehicles.scooters.forEach(vehicle =>{
-            let td = document.createElement("td");
-            td.innerHTML = `${parseInt(vehicle.prices.walkin.halfDay).toFixed(2)}U$`;
-            walkinHalfLine.append(td);
+        data.vehicles.forEach(vehicles =>{
+            vehicles.forEach(vehicle=>{
+                let td = document.createElement("td");
+                td.innerHTML = `${parseInt(vehicle.prices.walkin.halfDay).toFixed(2)}U$`;
+                walkinHalfLine.append(td);
+            });
         });
+
         vrData.appendChild(walkinHalfLine);
     }
 
@@ -106,11 +123,14 @@ function vehiclesTable(vehicles){
         let price = document.createElement("td");
         price.innerText = "Walk-In full-day";
         walkinFullLine.append(price);
-        vehicles.scooters.forEach(vehicle =>{
-            let td = document.createElement("td");
-            td.innerHTML = `${parseInt(vehicle.prices.walkin.fullDay).toFixed(2)}U$`;
-            walkinFullLine.append(td);
+        data.vehicles.forEach(vehicles =>{
+            vehicles.forEach(vehicle=>{
+                let td = document.createElement("td");
+                td.innerHTML = `${parseInt(vehicle.prices.walkin.fullDay).toFixed(2)}U$`;
+                walkinFullLine.append(td);
+            });
         });
+
         vrData.appendChild(walkinFullLine);
     }
 
