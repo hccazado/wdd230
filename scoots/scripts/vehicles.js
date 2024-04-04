@@ -183,6 +183,16 @@ function vehiclesTable(data){
             td.innerHTML = `${parseInt(vehicle.prices.walkin.fullDay).toFixed(2)}U$`;
             walkinFullLine.appendChild(td);
         });
+        data.atvs.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML = `${parseInt(vehicle.prices.walkin.fullDay).toFixed(2)}U$`;
+            walkinFullLine.appendChild(td);
+        });
+        data.jeeps.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML = `${parseInt(vehicle.prices.walkin.fullDay).toFixed(2)}U$`;
+            walkinFullLine.appendChild(td);
+        });
 
         vrData.appendChild(walkinFullLine);
     }
