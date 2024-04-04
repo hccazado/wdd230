@@ -1,4 +1,8 @@
 @media screen and (min-width: 700px){
+    main{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
     #menuBtn{
         display: none;
     }
