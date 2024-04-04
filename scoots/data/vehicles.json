@@ -13,7 +13,7 @@
                     "fullDay": "35"
                 }
             },
-            "img":"metropolitan.webp"
+            "img": "metropolitan.webp"
         },
         {
             "name": "Honda Dio",
@@ -28,7 +28,7 @@
                     "fullDay": "45"
                 }
             },
-            "img":"dio.webp"
+            "img": "dio.webp"
         },
         {
             "name": "Honda PCX150",
@@ -60,7 +60,7 @@
                     "fullDay": "80"
                 }
             },
-            "img":"pioneer.webp"
+            "img": "pioneer.webp"
         }
     ],
     "jeeps":[
