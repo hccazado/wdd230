@@ -28,7 +28,7 @@
                     "fullDay": "45"
                 }
             },
-            "img":"images/dio.webp"
+            "img":"dio.webp"
         },
         {
             "name": "Honda PCX150",
@@ -65,21 +65,6 @@
     ],
     "jeeps":[
         {
-            "name": "Wrangler - 4 Door - W/ A/C",
-            "capacity": "5",
-            "prices":{
-                "reservation":{
-                    "halfDay": "70",
-                    "fullDay": "100"
-                },
-                "walkin":{
-                    "halfDay": "85",
-                    "fullDay": "125"
-                }
-            },
-            "img":"wrangler4d.webp"
-        },
-        {
             "name": "Wrangler 2 Door",
             "capacity": "4",
             "prices":{
@@ -93,6 +78,21 @@
                 }
             },
             "img":"wrangler2d.webp"
+        },
+        {
+            "name": "Wrangler - 4 Door - W/ A/C",
+            "capacity": "5",
+            "prices":{
+                "reservation":{
+                    "halfDay": "70",
+                    "fullDay": "100"
+                },
+                "walkin":{
+                    "halfDay": "85",
+                    "fullDay": "125"
+                }
+            },
+            "img":"wrangler4d.webp"
         }
     ]
 }

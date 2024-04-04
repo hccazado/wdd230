@@ -107,21 +107,21 @@ function vehiclesTable(data){
     function reserveHalf(){
         let price = document.createElement("td");
         price.innerText = "Reserve half-day(3h)";
-        reserveHalfLine.append(price);
+        reserveHalfLine.appendChild(price);
         data.scooters.forEach(vehicle =>{
             let td = document.createElement("td");
             td.innerHTML =`${parseInt(vehicle.prices.reservation.halfDay).toFixed(2)}U$`;
-            reserveHalfLine.append(td);
+            reserveHalfLine.appendChild(td);
         });
         data.atvs.forEach(vehicle =>{
             let td = document.createElement("td");
             td.innerHTML =`${parseInt(vehicle.prices.reservation.halfDay).toFixed(2)}U$`;
-            reserveHalfLine.append(td);
+            reserveHalfLine.appendChild(td);
         });
         data.jeeps.forEach(vehicle =>{
             let td = document.createElement("td");
             td.innerHTML =`${parseInt(vehicle.prices.reservation.halfDay).toFixed(2)}U$`;
-            reserveHalfLine.append(td);
+            reserveHalfLine.appendChild(td);
         });
         
         vrData.appendChild(reserveHalfLine);
@@ -130,22 +130,22 @@ function vehiclesTable(data){
     function reserveFull(){
         let price = document.createElement("td");
         price.innerText = "Reserve full-day";
-        reserveFullLine.append(price);
-        reserveHalfLine.append(price);
+        reserveFullLine.appendChild(price);
+
         data.scooters.forEach(vehicle =>{
             let td = document.createElement("td");
             td.innerHTML = `${parseInt(vehicle.prices.reservation.fullDay).toFixed(2)}U$`;
-            reserveFullLine.append(td);
+            reserveFullLine.appendChild(td);
         });
         data.atvs.forEach(vehicle =>{
             let td = document.createElement("td");
             td.innerHTML = `${parseInt(vehicle.prices.reservation.fullDay).toFixed(2)}U$`;
-            reserveFullLine.append(td);
+            reserveFullLine.appendChild(td);
         });
         data.jeeps.forEach(vehicle =>{
             let td = document.createElement("td");
             td.innerHTML = `${parseInt(vehicle.prices.reservation.fullDay).toFixed(2)}U$`;
-            reserveFullLine.append(td);
+            reserveFullLine.appendChild(td);
         });
        
         vrData.appendChild(reserveFullLine);
@@ -154,21 +154,21 @@ function vehiclesTable(data){
     function walkHalf(){
         let price = document.createElement("td");
         price.innerText = "Walk-In half-day(3h)";
-        walkinHalfLine.append(price);
+        walkinHalfLine.appendChild(price);
         data.scooters.forEach(vehicle =>{
             let td = document.createElement("td");
             td.innerHTML = `${parseInt(vehicle.prices.walkin.halfDay).toFixed(2)}U$`;
-            walkinHalfLine.append(td);
+            walkinHalfLine.appendChild(td);
         });
         data.atvs.forEach(vehicle =>{
             let td = document.createElement("td");
             td.innerHTML = `${parseInt(vehicle.prices.walkin.halfDay).toFixed(2)}U$`;
-            walkinHalfLine.append(td);
+            walkinHalfLine.appendChild(td);
         });
         data.jeeps.forEach(vehicle =>{
             let td = document.createElement("td");
             td.innerHTML = `${parseInt(vehicle.prices.walkin.halfDay).toFixed(2)}U$`;
-            walkinHalfLine.append(td);
+            walkinHalfLine.appendChild(td);
         });
 
         vrData.appendChild(walkinHalfLine);
@@ -177,11 +177,11 @@ function vehiclesTable(data){
     function walkFull(){
         let price = document.createElement("td");
         price.innerText = "Walk-In full-day";
-        walkinFullLine.append(price);
+        walkinFullLine.appendChild(price);
         data.scooters.forEach(vehicle =>{
             let td = document.createElement("td");
             td.innerHTML = `${parseInt(vehicle.prices.walkin.fullDay).toFixed(2)}U$`;
-            walkinFullLine.append(td);
+            walkinFullLine.appendChild(td);
         });
 
         vrData.appendChild(walkinFullLine);

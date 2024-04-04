@@ -350,3 +350,42 @@ footer{
     padding: 1rem;
     background-color: #F5DEB3;
 }
+
+/*rental page*/
+.vr-table {
+    border: 1px solid #ddd;
+}
+
+.vr-table td{
+    width: 120px;
+}
+.vr-table thead{
+    background-color: #333;
+    color: #fff;
+}
+
+.vr-table img{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    padding: .5rem;
+    
+}
+.vrtable thead tr td{
+    margin: 0.5rem;
+}
+
+.vr-table tbody tr:nth-child(odd){
+    background-color: #eee;
+    color: #111;
+}
+
+.vr-table tbody tr td:nth-child(1){
+    font-weight: 600;
+    text-align: left;
+    
+}
+
+.vr-table tbody tr td{
+    padding: .5rem;
+}
