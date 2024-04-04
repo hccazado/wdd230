@@ -13,7 +13,7 @@
                     "fullDay": "35"
                 }
             },
-            "img":"images/metropolitan.webp"
+            "img":"metropolitan.webp"
         },
         {
             "name": "Honda Dio",
@@ -43,7 +43,7 @@
                     "fullDay": "55"
                 }
             },
-            "img":"images/pcx.webp"
+            "img":"pcx.webp"
         }
     ],
     "atvs":[
@@ -60,7 +60,7 @@
                     "fullDay": "80"
                 }
             },
-            "img":"images/pioneer.webp"
+            "img":"pioneer.webp"
         }
     ],
     "jeeps":[
@@ -77,7 +77,7 @@
                     "fullDay": "125"
                 }
             },
-            "img":"images/wrangler4d.webp"
+            "img":"wrangler4d.webp"
         },
         {
             "name": "Wrangler 2 Door",
@@ -92,7 +92,7 @@
                     "fullDay": "90"
                 }
             },
-            "img":"images/wrangler2d.webp"
+            "img":"wrangler2d.webp"
         }
     ]
 }
