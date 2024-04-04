@@ -81,10 +81,11 @@ function vehiclesTable(vehicles){
         let price = document.createElement("td");
         price.innerText = "Reserve full-day";
         reserveFullLine.append(price);
+        vehicles.forEach(category=>{console.log(category)});
         vehicles.scooters.forEach(vehicle =>{
             let td = document.createElement("td");
             td.innerHTML = `${parseInt(vehicle.prices.reservation.fullDay).toFixed(2)}U$`;
-            reservFullLine.append(td);
+            reserveFullLine.append(td);
         });
         vrData.appendChild(reserveFullLine);
     }

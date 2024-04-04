@@ -1,98 +1,100 @@
 {
-    "scooters":[
-        {
-            "name": "Honda Metro",
-            "capacity": "1",
-            "prices":{
-                "reservation":{
-                    "halfDay": "20",
-                    "fullDay": "30"
+    "vehicles":{
+        "scooters":[
+            {
+                "name": "Honda Metro",
+                "capacity": "1",
+                "prices":{
+                    "reservation":{
+                        "halfDay": "20",
+                        "fullDay": "30"
+                    },
+                    "walkin":{
+                        "halfDay": "25",
+                        "fullDay": "35"
+                    }
                 },
-                "walkin":{
-                    "halfDay": "25",
-                    "fullDay": "35"
-                }
+                "img":""
             },
-            "img":""
-        },
-        {
-            "name": "Honda Dio",
-            "capacity": "2",
-            "prices":{
-                "reservation":{
-                    "halfDay": "30",
-                    "fullDay": "40"
+            {
+                "name": "Honda Dio",
+                "capacity": "2",
+                "prices":{
+                    "reservation":{
+                        "halfDay": "30",
+                        "fullDay": "40"
+                    },
+                    "walkin":{
+                        "halfDay": "35",
+                        "fullDay": "45"
+                    }
                 },
-                "walkin":{
-                    "halfDay": "35",
-                    "fullDay": "45"
-                }
+                "img":""
             },
-            "img":""
-        },
-        {
-            "name": "Honda PCX150",
-            "capacity": "2",
-            "prices":{
-                "reservation":{
-                    "halfDay": "40",
-                    "fullDay": "50"
+            {
+                "name": "Honda PCX150",
+                "capacity": "2",
+                "prices":{
+                    "reservation":{
+                        "halfDay": "40",
+                        "fullDay": "50"
+                    },
+                    "walkin":{
+                        "halfDay": "45",
+                        "fullDay": "55"
+                    }
                 },
-                "walkin":{
-                    "halfDay": "45",
-                    "fullDay": "55"
-                }
-            },
-            "img":""
-        }
-    ],
-    "atvs":[
-        {
-            "name": "Honda Pioneer ATV",
-            "capacity": "2",
-            "prices":{
-                "reservation":{
-                    "halfDay": "50",
-                    "fullDay": "70"
+                "img":""
+            }
+        ],
+        "atvs":[
+            {
+                "name": "Honda Pioneer ATV",
+                "capacity": "2",
+                "prices":{
+                    "reservation":{
+                        "halfDay": "50",
+                        "fullDay": "70"
+                    },
+                    "walkin":{
+                        "halfDay": "60",
+                        "fullDay": "80"
+                    }
                 },
-                "walkin":{
-                    "halfDay": "60",
-                    "fullDay": "80"
-                }
-            },
-            "img":""
-        }
-    ],
-    "jeeps":[
-        {
-            "name": "Wrangler - 4 Door - W/ A/C",
-            "capacity": "5",
-            "prices":{
-                "reservation":{
-                    "halfDay": "70",
-                    "fullDay": "100"
+                "img":""
+            }
+        ],
+        "jeeps":[
+            {
+                "name": "Wrangler - 4 Door - W/ A/C",
+                "capacity": "5",
+                "prices":{
+                    "reservation":{
+                        "halfDay": "70",
+                        "fullDay": "100"
+                    },
+                    "walkin":{
+                        "halfDay": "85",
+                        "fullDay": "125"
+                    }
                 },
-                "walkin":{
-                    "halfDay": "85",
-                    "fullDay": "125"
-                }
+                "img":""
             },
-            "img":""
-        },
-        {
-            "name": "Wrangler 2 Door",
-            "capacity": "4",
-            "prices":{
-                "reservation":{
-                    "halfDay": "60",
-                    "fullDay": "85"
+            {
+                "name": "Wrangler 2 Door",
+                "capacity": "4",
+                "prices":{
+                    "reservation":{
+                        "halfDay": "60",
+                        "fullDay": "85"
+                    },
+                    "walkin":{
+                        "halfDay": "70",
+                        "fullDay": "90"
+                    }
                 },
-                "walkin":{
-                    "halfDay": "70",
-                    "fullDay": "90"
-                }
-            },
-            "img":""
-        }
-    ]
+                "img":""
+            }
+        ]
+    }
 }
