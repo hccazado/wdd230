@@ -30,18 +30,30 @@ function vehiclesTable(data){
         let image = document.createElement("td");
         image.innerText = "Image";
         imagesLine.append(image);
-        data.vehicles.forEach(category =>{
-            console.log(category);
-        })
-        data.vehicles.forEach(vehicles =>{
-            vehicles.forEach(vehicle=>{
-                let td = document.createElement("td");
-                let img = document.createElement("img");
-                img.setAttribute("src", `images/${vehicle.img}`);
-                img.setAttribute("alt", `${vehicle.name} picture`);
-                td.appendChild(img)
-                imagesLine.append(td);
-            });
+
+        data.scooters.forEach(vehicle =>{
+            let td = document.createElement("td");
+            let img = document.createElement("img");
+            img.setAttribute("src", `images/${vehicle.img}`);
+            img.setAttribute("alt", `${vehicle.name} picture`);
+            td.appendChild(img)
+            imagesLine.append(td);
+        });
+        data.atvs.forEach(vehicle =>{
+            let td = document.createElement("td");
+            let img = document.createElement("img");
+            img.setAttribute("src", `images/${vehicle.img}`);
+            img.setAttribute("alt", `${vehicle.name} picture`);
+            td.appendChild(img)
+            imagesLine.append(td);
+        });
+        data.jeeps.forEach(vehicle =>{
+            let td = document.createElement("td");
+            let img = document.createElement("img");
+            img.setAttribute("src", `images/${vehicle.img}`);
+            img.setAttribute("alt", `${vehicle.name} picture`);
+            td.appendChild(img)
+            imagesLine.append(td);
         });
             
         vrData.appendChild(imagesLine);
@@ -51,12 +63,20 @@ function vehiclesTable(data){
         let name = document.createElement("td");
         name.innerText = "Name";
         namesLine.append(name);
-        data.vehicles.forEach(vehicles =>{
-            vehicles.forEach(vehicle=>{
-                let td = document.createElement("td");
+        data.scooters.forEach(vehicle =>{
+            let td = document.createElement("td");
                 td.innerHTML = vehicle.name;
                 namesLine.append(td);
-            });
+        });
+        data.atvs.forEach(vehicle =>{
+            let td = document.createElement("td");
+                td.innerHTML = vehicle.name;
+                namesLine.append(td);
+        });
+        data.jeeps.forEach(vehicle =>{
+            let td = document.createElement("td");
+                td.innerHTML = vehicle.name;
+                namesLine.append(td);
         });
         vrData.appendChild(namesLine);
     }
@@ -65,13 +85,22 @@ function vehiclesTable(data){
         let cap = document.createElement("td");
         cap.innerText = "capacity";
         capcacityLine.append(cap);
-        data.vehicles.forEach(vehicles =>{
-            vehicles.forEach(vehicle=>{
-                let td = document.createElement("td");
-                td.innerHTML = vehicle.capacity;
-                capcacityLine.append(td);
-            });
+        data.scooters.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML = vehicle.capacity;
+            capcacityLine.append(td);
         });
+        data.atvs.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML = vehicle.capacity;
+            capcacityLine.append(td);
+        });
+        data.jeeps.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML = vehicle.capacity;
+            capcacityLine.append(td);
+        });
+        
         vrData.appendChild(capcacityLine);
     }
 
@@ -79,13 +108,22 @@ function vehiclesTable(data){
         let price = document.createElement("td");
         price.innerText = "Reserve half-day(3h)";
         reserveHalfLine.append(price);
-        data.vehicles.forEach(vehicles =>{
-            vehicles.forEach(vehicle=>{
-                let td = document.createElement("td");
-                td.innerHTML =`${parseInt(vehicle.prices.reservation.halfDay).toFixed(2)}U$`;
-                reserveHalfLine.append(td);
-            });
+        data.scooters.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML =`${parseInt(vehicle.prices.reservation.halfDay).toFixed(2)}U$`;
+            reserveHalfLine.append(td);
         });
+        data.atvs.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML =`${parseInt(vehicle.prices.reservation.halfDay).toFixed(2)}U$`;
+            reserveHalfLine.append(td);
+        });
+        data.jeeps.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML =`${parseInt(vehicle.prices.reservation.halfDay).toFixed(2)}U$`;
+            reserveHalfLine.append(td);
+        });
+        
         vrData.appendChild(reserveHalfLine);
     }
 
@@ -94,13 +132,22 @@ function vehiclesTable(data){
         price.innerText = "Reserve full-day";
         reserveFullLine.append(price);
         reserveHalfLine.append(price);
-        data.vehicles.forEach(vehicles =>{
-            vehicles.forEach(vehicle=>{
-                let td = document.createElement("td");
-                td.innerHTML = `${parseInt(vehicle.prices.reservation.fullDay).toFixed(2)}U$`;
-                reserveFullLine.append(td);
-            });
+        data.scooters.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML = `${parseInt(vehicle.prices.reservation.fullDay).toFixed(2)}U$`;
+            reserveFullLine.append(td);
         });
+        data.atvs.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML = `${parseInt(vehicle.prices.reservation.fullDay).toFixed(2)}U$`;
+            reserveFullLine.append(td);
+        });
+        data.jeeps.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML = `${parseInt(vehicle.prices.reservation.fullDay).toFixed(2)}U$`;
+            reserveFullLine.append(td);
+        });
+       
         vrData.appendChild(reserveFullLine);
     }
 
@@ -108,12 +155,20 @@ function vehiclesTable(data){
         let price = document.createElement("td");
         price.innerText = "Walk-In half-day(3h)";
         walkinHalfLine.append(price);
-        data.vehicles.forEach(vehicles =>{
-            vehicles.forEach(vehicle=>{
-                let td = document.createElement("td");
-                td.innerHTML = `${parseInt(vehicle.prices.walkin.halfDay).toFixed(2)}U$`;
-                walkinHalfLine.append(td);
-            });
+        data.scooters.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML = `${parseInt(vehicle.prices.walkin.halfDay).toFixed(2)}U$`;
+            walkinHalfLine.append(td);
+        });
+        data.atvs.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML = `${parseInt(vehicle.prices.walkin.halfDay).toFixed(2)}U$`;
+            walkinHalfLine.append(td);
+        });
+        data.jeeps.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML = `${parseInt(vehicle.prices.walkin.halfDay).toFixed(2)}U$`;
+            walkinHalfLine.append(td);
         });
 
         vrData.appendChild(walkinHalfLine);
@@ -123,12 +178,10 @@ function vehiclesTable(data){
         let price = document.createElement("td");
         price.innerText = "Walk-In full-day";
         walkinFullLine.append(price);
-        data.vehicles.forEach(vehicles =>{
-            vehicles.forEach(vehicle=>{
-                let td = document.createElement("td");
-                td.innerHTML = `${parseInt(vehicle.prices.walkin.fullDay).toFixed(2)}U$`;
-                walkinFullLine.append(td);
-            });
+        data.scooters.forEach(vehicle =>{
+            let td = document.createElement("td");
+            td.innerHTML = `${parseInt(vehicle.prices.walkin.fullDay).toFixed(2)}U$`;
+            walkinFullLine.append(td);
         });
 
         vrData.appendChild(walkinFullLine);
