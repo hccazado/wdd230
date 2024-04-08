@@ -50,7 +50,7 @@
     }
 
     .grid-columns{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr .75fr;
     }
 
     .grid-columns h3{

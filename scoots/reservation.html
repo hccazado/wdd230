@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Heitor C. Cazado">
@@ -36,10 +36,10 @@
     <div id="menuBtn"></div>
     <nav>
         <ul id="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="rental.html">Renting</a></li>
-            <li><a href="reservation.html">Reserves</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="rental.html">Renting</a></li>
+            <li><a class="nav-link" href="reservation.html">Reserves</a></li>
+            <li><a class="nav-link" href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
     <div id="weather">
@@ -65,20 +65,40 @@
                     <legend>Personal Data</legend>
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required placeholder="Inform your name" pattern="[A-Za-z0-9]{3,25}">
-                    <laber for="surname">Surname</laber>
+                    <label for="surname">Surname</label>
                     <input type="text" id="surname" name="surname" required placeholder="Inform your surname" pattern="[A-Za-z0-9]{3,25}">
                     <label for="dob">Birthday</label>
                     <input type="date" name="dob" id="dob" required>
                 </fieldset>
                 <fieldset class="radio">
+                    <legend>Select Your Vehicle</legend>
+                    <label for="metro">Honda Metro (scooter)</label>
+                    <input type="radio" id="metro" name="vehicle" value="metro">
+                    
+                    <label for="dio">Honda Dio (scooter)</label>
+                    <input type="radio" id="dio" name="vehicle" value="dio">
+                    
+                    <label for="pcx">Honda PCX150 (scooter)</label>
+                    <input type="radio" id="pcx" name="vehicle" value="pcx">
+                    
+                    <label for="pioneer">Honda Pioneer (ATV)</label>
+                    <input type="radio" id="pioneer" name="vehicle" value="metro">
+                    
+                    <label for="wragler2d">Jeep Wrangler 2 Door</label>
+                    <input type="radio" id="wragler2d" name="vehicle" value="wrangler2d">
+                    
+                    <label for="wragler4d">Jeep Wrangler 4 Door With A/C</label>
+                    <input type="radio" id="wragler4d" name="vehicle" value="wrangler4d">
+                </fieldset>
+                <fieldset class="radio">
                     <legend>Payment Method</legend>
-                    <label for="gpay"><input type="radio" id="gpay" name="payment" value="gpay"></radio><img src="images/gpay.webp" alt="Google webpay icon"></
+                    <label for="gpay"><input type="radio" id="gpay" name="payment" value="gpay"><img src="images/gpay.webp" alt="Google webpay icon"></label>
                     <label for="apay"><img src="images/apay.webp" alt="Apple Webpay icon"></label>
-                    <input type="radio" id="apay" name="payment" value="apay"></radio>
+                    <input type="radio" id="apay" name="payment" value="apay">
                     <label for="visa"><img src="images/visa.webp" alt="Visa logo"></label>
-                    <input type="radio" id="visa" name="payment" value="visa"></radio>
+                    <input type="radio" id="visa" name="payment" value="visa">
                     <label for="master"><img src="images/master.webp" alt="Mastercard logo"></label>
-                    <input type="radio" id="master" name="payment" value="master"></radio>
+                    <input type="radio" id="master" name="payment" value="master">
                 </fieldset>
                 <fieldset>
                     <legend>Special Request</legend>
@@ -90,9 +110,8 @@
         <div>
             <ul>
                 <li>
-
+                    A $50 security deposit is required to confirm reservations.
                 </li>
-                A $50 security deposit is required to confirm reservations.
                 <li>
                     A valid drivers license is required in hand at the time of rental.
                 </li>
@@ -121,10 +140,8 @@
                     Rentals may be returned to either physical location.
                 </li>
             </ul>
-            
-           
-            
-            
+            <input type="checkbox" id="chk-term">
+            <label for="chk-term">I read and accept terms.</label>
         </div>
     </main>
     <footer>

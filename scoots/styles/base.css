@@ -8,30 +8,14 @@
     padding: 0;
 }
 
-.dancing-script{ /*Headings*/
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700; /*400-700*/
-    font-style: normal;
-}
-
-.sources-serif{ /*body text*/
-    font-family: "Source Serif 4", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
 h1,h2,h3,h4,h5,h6{
     font-family: "Dancing Script", cursive;
     font-weight: 700;
-    font-optical-sizing: auto;
     font-style: normal;
 }
 
 p, li, a, ul, span, div, section{
     font-family: "Source Serif 4", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -84,12 +68,13 @@ header a{
 }
 
 #menuBtn{
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 0rem;
     padding: .7rem;
     border: 1px solid #000;
     border-radius: .3rem;
+    z-index: 10;
 }
 
 #menuBtn::before{
@@ -120,7 +105,6 @@ header a{
     font-family: "Dancing Script", cursive;
     font-weight: 700;
     width:100%;
-    height: 48px;
     padding: 1rem;
     text-decoration: none;
     font-size: 2rem;
@@ -130,6 +114,10 @@ header a{
 #navbar a:hover{
     background-color: #00CED1;
     color: #000;
+}
+
+.active{
+    border-bottom: 4px solid #FF6F61;
 }
 
 .heroContainer{
@@ -143,9 +131,10 @@ header a{
 }
 
 .heroContainer button{
-    position: absolute;
+    position: relative;
     bottom: 3rem;
     right: 1rem;
+    box-shadow: #FF6F61 0 0 15px;
 }
 
 .reserveBtn{
@@ -154,10 +143,19 @@ header a{
     background-color: #FF6F61;
     border-radius: .5rem;
     font-size: 1.1rem;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 200px;
+    position: absolute;
+    bottom: 4rem;
+    right: 2rem;
 }
 
 .reserveBtn:hover{
-    background-color: #5F9EA0;
+    background-color: #8D9980;
     border: 2px solid #FF6F61;
 }
 
@@ -188,6 +186,7 @@ section .vehicles{
     height: 100px;
     background-color: #8D9980;
     border-radius: 50%;
+    box-shadow: #8D9980 0 0 15px ;
 }
 
 .vehicles img{
@@ -228,6 +227,7 @@ section .vehicles{
     bottom: -40px;
     right: 0;
     background-color: #F5DEB3;
+    box-shadow: #8D9980 0 0 15px;
 }
 
 #weather{
@@ -347,6 +347,21 @@ section .vehicles{
 .grid-columns iframe{
     width: 100%;
     height: 250px;
+}
+
+.grid-columns div ul li{
+    list-style-type: none;
+}
+
+.grid-columns div ul li::before{
+    content: ">";
+    font-family: "consolas";
+
+}
+
+.rentals-description p{
+    margin-top: 1rem;
+    font-size: 1.1rem;
 }
 
 footer{
