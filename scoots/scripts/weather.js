@@ -32,7 +32,7 @@ function displayWeather(resultSet){
     temp.innerHTML = `Temperature: <strong>${resultSet.list[0].main.temp}&degF</strong>`;
     hum.innerHTML = `Humidity: <strong>${resultSet.list[0].main.humidity}%</strong>`;
     
-    if(document.location.pathname == "index"){
+    if(maxTemp){
         maxTemp.innerHTML = `${Math.round(resultSet.list[0].main.temp_max)}&deg;F`;
     }
 
