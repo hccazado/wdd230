@@ -69,28 +69,46 @@
                     <input type="text" id="name" name="name" required placeholder="Inform your name" pattern="[A-Za-z0-9]{3,25}">
                     <label for="surname">Surname</label>
                     <input type="text" id="surname" name="surname" required placeholder="Inform your surname" pattern="[A-Za-z0-9]{3,25}">
+                    <label for="tel">Phone</label>
+                    <input type="tel" id="tel" name="tel" required placeholder="+54 11 4569-5698">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="me@mail.com">
                     <label for="dob">Birthday</label>
-                    <input type="date" name="dob" id="dob" required>
+                    <input type="date" id="dob" name="dob" required>
                 </fieldset>
                 <fieldset class="radio">
                     <legend>Select Your Vehicle</legend>
-                    <input type="radio" id="metro" name="vehicle" value="metro">
-                    <label for="metro">Honda Metro (scooter)</label>
-                    
-                    <input type="radio" id="dio" name="vehicle" value="dio">
-                    <label for="dio">Honda Dio (scooter)</label>
-                    
-                    <input type="radio" id="pcx" name="vehicle" value="pcx">
-                    <label for="pcx">Honda PCX150 (scooter)</label>
-                    
-                    <label for="pioneer">Honda Pioneer (ATV)</label>
-                    <input type="radio" id="pioneer" name="vehicle" value="metro">
-                    
-                    <input type="radio" id="wragler2d" name="vehicle" value="wrangler2d">
-                    <label for="wragler2d">Jeep Wrangler 2 Door</label>
-                    
-                    <input type="radio" id="wragler4d" name="vehicle" value="wrangler4d">
-                    <label for="wragler4d">Jeep Wrangler 4 Door With A/C</label>
+                    <div class="reserve-vehicle-container">
+                        <div class="reservation-vehicle">
+                            <input type="radio" id="metro" name="vehicle" value="metro">
+                            <label for="metro">Honda Metro (scooter)</label>
+                        </div>
+
+                        <div class="reservation-vehicle">
+                            <input type="radio" id="dio" name="vehicle" value="dio">
+                            <label for="dio">Honda Dio (scooter)</label>
+                        </div>
+
+                        <div class="reservation-vehicle">
+                            <input type="radio" id="pcx" name="vehicle" value="pcx">
+                            <label for="pcx">Honda PCX150 (scooter)</label>
+                        </div>
+
+                        <div class="reservation-vehicle">
+                            <input type="radio" id="pioneer" name="vehicle" value="metro">
+                            <label for="pioneer">Honda Pioneer (ATV)</label>
+                        </div>
+
+                        <div class="reservation-vehicle">
+                            <input type="radio" id="wragler2d" name="vehicle" value="wrangler2d">
+                            <label for="wragler2d">Jeep Wrangler 2 Door</label>
+                        </div>
+
+                        <div class="reservation-vehicle">
+                            <input type="radio" id="wragler4d" name="vehicle" value="wrangler4d">
+                            <label for="wragler4d">Jeep Wrangler 4 Door With A/C</label>
+                        </div>
+                    </div>
                 </fieldset>
                 <fieldset class="radio">
                     <legend>Payment Method</legend>
