@@ -17,11 +17,12 @@ async function fetchWeather(){
 }
 
 function displayWeather(resultSet){
-
+ 
     const temp = document.querySelector("#wt-temp");
     const hum = document.querySelector("#wt-hum");
     const icon = document.querySelector("#wt-icon");
     const fcTemp = document.querySelector("#fc-temp");
+    const maxTemp = document.querySelector("#max-temp");
     
     const ctDate = new Date(Date.now());
     const ctDay = ctDate.getDay();
@@ -30,6 +31,10 @@ function displayWeather(resultSet){
     icon.setAttribute("src",`https://openweathermap.org/img/wn/${resultSet.list[0].weather[0].icon}.png`); 
     temp.innerHTML = `Temperature: <strong>${resultSet.list[0].main.temp}&degF</strong>`;
     hum.innerHTML = `Humidity: <strong>${resultSet.list[0].main.humidity}%</strong>`;
+    
+    if(document.location.pathname == "index"){
+        maxTemp.innerHTML = `${Math.round(resultSet.list[0].main.temp_max)}&deg;F`;
+    }
 
     resultSet.list.forEach(forecast => {
 

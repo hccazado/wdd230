@@ -60,6 +60,7 @@
     <main class="grid-columns">
         <h3>Reserve Your Vehicle</h3>
         <div>
+            <h4 id="form-error">You need to agree with the conditions first!</h4>
             <form method="get" action="confirmation.html">
                 <fieldset>
                     <legend>Personal Data</legend>
@@ -72,39 +73,53 @@
                 </fieldset>
                 <fieldset class="radio">
                     <legend>Select Your Vehicle</legend>
-                    <label for="metro">Honda Metro (scooter)</label>
                     <input type="radio" id="metro" name="vehicle" value="metro">
+                    <label for="metro">Honda Metro (scooter)</label>
                     
-                    <label for="dio">Honda Dio (scooter)</label>
                     <input type="radio" id="dio" name="vehicle" value="dio">
+                    <label for="dio">Honda Dio (scooter)</label>
                     
-                    <label for="pcx">Honda PCX150 (scooter)</label>
                     <input type="radio" id="pcx" name="vehicle" value="pcx">
+                    <label for="pcx">Honda PCX150 (scooter)</label>
                     
                     <label for="pioneer">Honda Pioneer (ATV)</label>
                     <input type="radio" id="pioneer" name="vehicle" value="metro">
                     
-                    <label for="wragler2d">Jeep Wrangler 2 Door</label>
                     <input type="radio" id="wragler2d" name="vehicle" value="wrangler2d">
+                    <label for="wragler2d">Jeep Wrangler 2 Door</label>
                     
-                    <label for="wragler4d">Jeep Wrangler 4 Door With A/C</label>
                     <input type="radio" id="wragler4d" name="vehicle" value="wrangler4d">
+                    <label for="wragler4d">Jeep Wrangler 4 Door With A/C</label>
                 </fieldset>
                 <fieldset class="radio">
                     <legend>Payment Method</legend>
-                    <label for="gpay"><input type="radio" id="gpay" name="payment" value="gpay"><img src="images/gpay.webp" alt="Google webpay icon"></label>
-                    <label for="apay"><img src="images/apay.webp" alt="Apple Webpay icon"></label>
-                    <input type="radio" id="apay" name="payment" value="apay">
-                    <label for="visa"><img src="images/visa.webp" alt="Visa logo"></label>
-                    <input type="radio" id="visa" name="payment" value="visa">
-                    <label for="master"><img src="images/master.webp" alt="Mastercard logo"></label>
-                    <input type="radio" id="master" name="payment" value="master">
+                    <div class="payment-container">
+                        <div class="payment">
+                            <label for="gpay"><img src="images/gpay.webp" alt="Google webpay icon"></label>
+                            <input type="radio" id="gpay" name="payment" value="gpay">
+                        </div>
+                        <div class="payment">
+                            <label for="apay"><img src="images/apay.webp" alt="Apple Webpay icon"></label>
+                            <input type="radio" id="apay" name="payment" value="apay">
+                        </div>
+                        
+                        <div class="payment">
+                            <label for="visa"><img src="images/visa.webp" alt="Visa logo"></label>
+                            <input type="radio" id="visa" name="payment" value="visa">
+                        </div>
+                        
+                        <div class="payment">
+                            <label for="master"><img src="images/master.webp" alt="Mastercard logo"></label>
+                            <input type="radio" id="master" name="payment" value="master">
+                        </div>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Special Request</legend>
                     <label for="request">Inform your special request</label>
                     <textarea id="request"></textarea>
                 </fieldset>
+                <input type="submit" value="Reserve your Ride">
             </form>
         </div>
         <div>
@@ -141,7 +156,7 @@
                 </li>
             </ul>
             <input type="checkbox" id="chk-term">
-            <label for="chk-term">I read and accept terms.</label>
+            <label for="chk-term" class="label-agreement">I read and accept terms.</label>
         </div>
     </main>
     <footer>
@@ -149,6 +164,7 @@
         <a href="references.html">References</a>
         <p>Heitor Chaves Cazado | BYU-I WDD230</p>
     </footer>
+    <script src="scripts/form.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/menu.js"></script>
 </body>

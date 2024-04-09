@@ -72,4 +72,24 @@
     .vr-table-container{
         width: 100%;
     }
+
+    #wt-max-temp{
+        position: fixed;
+        top: 10rem;
+        width: 60%;
+        margin-left: 20%;
+        height: 120px;
+        padding: 3rem 2rem;
+        background-color: #8D9980;
+        box-shadow: 0 0 10px #FF6F61;
+        font-size: 1.5rem;
+    }
+    #banner-btn::before{
+        content: "✖️";
+        font-size: 1.5rem;
+    }
+
+    .payment-container{
+        justify-content: space-around;
+    }
 }
