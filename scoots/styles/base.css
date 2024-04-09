@@ -446,6 +446,7 @@ footer{
 
 .vr-table-container{
     width: 400px;
+    height: 545px;
     overflow-x: scroll;
 }
 .vr-table {
